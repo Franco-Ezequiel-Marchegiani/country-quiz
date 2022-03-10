@@ -6,6 +6,9 @@ function App() {
     <main className='containerAll'>
       <div>
       <h1>Country Quiz</h1>
+      <section>
+        
+      </section>
       </div>
     </main>
   );
