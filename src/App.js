@@ -4,7 +4,9 @@ import './App.css';
 function App() {
   return (
     <main className='containerAll'>
-      <h1>Texto</h1>
+      <div>
+      <h1>Country Quiz</h1>
+      </div>
     </main>
   );
 }
