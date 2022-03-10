@@ -5,6 +5,7 @@ function Question() {
   return (
       <section>
         <h2>Kuala Lumpur is the capital of</h2>
+        
       </section>
   );
 }
