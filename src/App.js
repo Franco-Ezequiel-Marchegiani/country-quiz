@@ -29,7 +29,7 @@ fetch("https://api.apilayer.com/geo/city/name/{city}", requestOptions)
       <section>
         <Question/>
       </section>
-      <footer></footer>
+      <footer>Created by Franco Ezequiel Marchegiani - devChallenges.io</footer>
       </div>
     </main>
   );
