@@ -29,6 +29,7 @@ fetch("https://api.apilayer.com/geo/city/name/{city}", requestOptions)
       <section>
         <Question/>
       </section>
+      <footer></footer>
       </div>
     </main>
   );
