@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Question from './components/Question';
 import { Link } from 'react-router-dom';
