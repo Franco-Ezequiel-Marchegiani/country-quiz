@@ -10,9 +10,9 @@ function Question() {
         <button>C Texto 3</button>
         <button>D Texto 4</button>
         {/* Si el usuario falla */}
-        <p>Results</p>
+        {/* <p>Results</p>
         <span>You got 4 correct answers</span>
-        <button>Try again</button>
+        <button>Try again</button> */}
       </section>
   );
 }
