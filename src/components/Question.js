@@ -6,6 +6,7 @@ function Question() {
       <section>
         <h2>Kuala Lumpur is the capital of</h2>
         <button>A Texto 1</button>
+        <button>B Texto 2</button>
         
       </section>
   );
