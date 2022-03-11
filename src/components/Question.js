@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-import LogoWorld from '../images/undraw_winners_ao2o 2.svg'
+import React from 'react';
+import LogoWorld from '../images/logoWorld.svg'
 function Question() {
   return (
       <section>
@@ -10,6 +9,8 @@ function Question() {
         <button>B Texto 2</button>
         <button>C Texto 3</button>
         <button>D Texto 4</button>
+        {/* Si el usuario falla */}
+        <p>Results</p>
       </section>
   );
 }

@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Question from './components/Question';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ fetch("https://api.apilayer.com/geo/city/name/{city}", requestOptions)
       <div>
       <h1>Country Quiz</h1>
       <section>
-        
+        <Question/>
       </section>
       </div>
     </main>
