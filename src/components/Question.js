@@ -11,6 +11,7 @@ function Question() {
         <button>D Texto 4</button>
         {/* Si el usuario falla */}
         <p>Results</p>
+        <span>You got 4 correct answers</span>
       </section>
   );
 }
