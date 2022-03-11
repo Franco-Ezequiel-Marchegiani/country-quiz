@@ -12,6 +12,7 @@ function Question() {
         {/* Si el usuario falla */}
         <p>Results</p>
         <span>You got 4 correct answers</span>
+        <button>Try again</button>
       </section>
   );
 }
