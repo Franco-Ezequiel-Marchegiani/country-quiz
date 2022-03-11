@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Question from './components/Question';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -28,8 +29,8 @@ fetch("https://api.apilayer.com/geo/city/name/{city}", requestOptions)
       <h1>Country Quiz</h1>
       <section>
         <Question/>
-      </section>
-      <footer>Created by Franco Ezequiel Marchegiani - devChallenges.io</footer>
+      </section> 
+      <footer>Created by <Link to="">Franco Ezequiel Marchegiani</Link> - devChallenges.io</footer>
       </div>
     </main>
   );
