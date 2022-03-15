@@ -46,6 +46,51 @@ function Question() {
         { answerText: "Blanco", isCorrect: true},
         { answerText: "Violeta", isCorrect: false},
       ]
+    },
+    {
+      questionText: "De qué color es el caballo blanco de San Martín?",
+      answerOptiones: [
+        { answerText: "Azul", isCorrect: false},
+        { answerText: "Verde", isCorrect: false},
+        { answerText: "Blanco", isCorrect: true},
+        { answerText: "Violeta", isCorrect: false},
+      ]
+    },
+    {
+      questionText: "De qué color es el caballo blanco de San Martín?",
+      answerOptiones: [
+        { answerText: "Azul", isCorrect: false},
+        { answerText: "Verde", isCorrect: false},
+        { answerText: "Blanco", isCorrect: true},
+        { answerText: "Violeta", isCorrect: false},
+      ]
+    },
+    {
+      questionText: "De qué color es el caballo blanco de San Martín?",
+      answerOptiones: [
+        { answerText: "Azul", isCorrect: false},
+        { answerText: "Verde", isCorrect: false},
+        { answerText: "Blanco", isCorrect: true},
+        { answerText: "Violeta", isCorrect: false},
+      ]
+    },
+    {
+      questionText: "De qué color es el caballo blanco de San Martín?",
+      answerOptiones: [
+        { answerText: "Azul", isCorrect: false},
+        { answerText: "Verde", isCorrect: false},
+        { answerText: "Blanco", isCorrect: true},
+        { answerText: "Violeta", isCorrect: false},
+      ]
+    },
+    {
+      questionText: "De qué color es el caballo blanco de San Martín?",
+      answerOptiones: [
+        { answerText: "Azul", isCorrect: false},
+        { answerText: "Verde", isCorrect: false},
+        { answerText: "Blanco", isCorrect: true},
+        { answerText: "Violeta", isCorrect: false},
+      ]
     }
   ]
   let countriesQuestions = []
