@@ -47,7 +47,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
-      flagCode: "lux",
+      flagCode: "prt",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
@@ -57,7 +57,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
-      flagCode: "lux",
+      flagCode: "usa",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
