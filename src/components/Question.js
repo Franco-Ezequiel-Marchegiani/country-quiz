@@ -47,6 +47,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
+      flagCode: "lux",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
@@ -56,6 +57,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
+      flagCode: "lux",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
@@ -65,6 +67,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
+      flagCode: "nzl",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
@@ -74,6 +77,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
+      flagCode: "nor",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
@@ -83,6 +87,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
+      flagCode: "mex",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
@@ -92,6 +97,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
+      flagCode: "mhl",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
@@ -101,6 +107,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
+      flagCode: "maf",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
