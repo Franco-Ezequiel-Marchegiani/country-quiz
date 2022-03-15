@@ -1,6 +1,19 @@
 import React from 'react';
 import LogoWorld from '../images/logoWorld.svg'
 function Question() {
+  var myHeaders = new Headers();
+    myHeaders.append("apikey", "Q1dDLxCfahEE8WEQFGghtx7OQtTEWmUo");
+
+    var requestOptions = {
+      method: 'GET',
+      redirect: 'follow',
+      headers: myHeaders
+    };
+    fetch("https://countryflagsapi.com/png/brazil", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+    console.log(myHeaders);
   let flagQuestions = [
     {
       questionText: "De qué color es el caballo blanco de San Martín?",

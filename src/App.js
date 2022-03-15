@@ -18,7 +18,7 @@ var requestOptions = {
   headers: myHeaders
 };
 
-fetch("https://api.apilayer.com/geo/city/name/{city}", requestOptions)
+fetch("https://countryflagsapi.com/svg/bra", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
