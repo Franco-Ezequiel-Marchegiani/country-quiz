@@ -17,6 +17,7 @@ function Question() {
   let flagQuestions = [
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
+      flagCode: "arg",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
