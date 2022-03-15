@@ -1,6 +1,8 @@
 import React from 'react';
 import LogoWorld from '../images/logoWorld.svg'
 function Question() {
+  let flagQuestions = []
+  
   return (
       <section>
         <h2>Kuala Lumpur is the capital of</h2>
