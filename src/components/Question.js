@@ -1,7 +1,17 @@
 import React from 'react';
 import LogoWorld from '../images/logoWorld.svg'
 function Question() {
-  let flagQuestions = []
+  let flagQuestions = [
+    {
+      questionText: "De qué color es el caballo blanco de San Martín?",
+      answerOptiones: [
+        { answerText: "Azul", isCorrect: false},
+        { answerText: "Verde", isCorrect: false},
+        { answerText: "Blanco", isCorrect: true},
+        { answerText: "Violeta", isCorrect: false},
+      ]
+    }
+  ]
   let countriesQuestions = []
   
   return (
