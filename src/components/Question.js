@@ -2,6 +2,7 @@ import React from 'react';
 import LogoWorld from '../images/logoWorld.svg'
 function Question() {
   let flagQuestions = []
+  let countriesQuestions = []
   
   return (
       <section>
