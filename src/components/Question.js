@@ -213,8 +213,8 @@ function Question() {
       ]
     },
   ]
-  let flagCode = flagQuestions[numberQuestion].flagCode
-  let urlImage = `https://countryflagsapi.com/png/${flagCode}`
+  let flagCode = flagQuestions[numberQuestion].flagCode;
+  let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
   console.log(flagCode);
   
   return (

@@ -24,13 +24,12 @@ fetch("https://countryflagsapi.com/svg/bra", requestOptions)
   .catch(error => console.log('error', error));
   */
     <main className='containerAll'>
-      <div>
       <h1>Country Quiz</h1>
       <section>
         <Question/>
       </section> 
       <footer>Created by <Link to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</footer>
-      </div>
+
     </main>
   );
 }
