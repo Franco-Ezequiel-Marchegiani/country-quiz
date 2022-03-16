@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LogoWorld from '../images/logoWorld.svg'
 function Question() {
+
+  let [numberQuestion, setNumberQuestion] = useState(0)
   var myHeaders = new Headers();
     myHeaders.append("apikey", "Q1dDLxCfahEE8WEQFGghtx7OQtTEWmUo");
 
@@ -26,7 +28,7 @@ function Question() {
       ]
     },
     {
-      questionText: "De qué color es el caballo blanco de San Martín?",
+      questionText: "De qué color es el caballo blanco de San Martín?2",
       flagCode: "br",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -36,7 +38,7 @@ function Question() {
       ]
     },
     {
-      questionText: "De qué color es el caballo blanco de San Martín?",
+      questionText: "De qué color es el caballo blanco de San Martín?3",
       flagCode: "lux",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -46,7 +48,7 @@ function Question() {
       ]
     },
     {
-      questionText: "De qué color es el caballo blanco de San Martín?",
+      questionText: "De qué color es el caballo blanco de San Martín4",
       flagCode: "prt",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -211,7 +213,7 @@ function Question() {
   
   return (
       <section>
-        <h2>Kuala Lumpur is the capital of</h2>
+        <h2>{flagQuestions[numberQuestion].questionText}</h2>
         <img src={LogoWorld} alt="" />
         <button>A Texto 1</button>
         <button>B Texto 2</button>
