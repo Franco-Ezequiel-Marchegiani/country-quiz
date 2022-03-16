@@ -4,5 +4,9 @@
 .containerAll h1{
     color: #F2F2F2;
     font-family: 'Poppins';
-    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-transform: uppercase;
 }
