@@ -4,4 +4,13 @@
     height: 515px;
     margin: auto;
     border-radius: 24px;
+    position: relative;
+}
+.logoWorld{
+    position: absolute;
+    right: 0;
+    top: -70px;
+}
+.questionText{
+    padding-top: 68px;
 }

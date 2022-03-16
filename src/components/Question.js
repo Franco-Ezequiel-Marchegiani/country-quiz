@@ -220,8 +220,8 @@ function Question() {
   
   return (
       <section className='questionContainer'>
-        <img src={LogoWorld} alt="" />
-        <h2>{flagQuestions[numberQuestion].questionText}</h2>
+        <img className='logoWorld' src={LogoWorld} alt="" />
+        <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
         <img src={urlImage} alt="" />
         <button>A Texto 1</button>
         <button>B Texto 2</button>
