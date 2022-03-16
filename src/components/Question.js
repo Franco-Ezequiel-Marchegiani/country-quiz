@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import LogoWorld from '../images/logoWorld.svg'
+import './Question.css';
 function Question() {
 
   let [numberQuestion, setNumberQuestion] = useState(2)
@@ -218,7 +219,7 @@ function Question() {
   console.log(flagCode);
   
   return (
-      <section>
+      <section className='questionContainer'>
         <h2>{flagQuestions[numberQuestion].questionText}</h2>
         <img src={urlImage} alt="" />
         <button>A Texto 1</button>
