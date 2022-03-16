@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import LogoWorld from '../images/logoWorld.svg'
 function Question() {
 
-  let [numberQuestion, setNumberQuestion] = useState(3)
+  let [numberQuestion, setNumberQuestion] = useState(2)
+  let [flagImage, setFlagImage] = useState();
   var myHeaders = new Headers();
     myHeaders.append("apikey", "Q1dDLxCfahEE8WEQFGghtx7OQtTEWmUo");
 
@@ -11,10 +12,13 @@ function Question() {
       redirect: 'follow',
       headers: myHeaders
     };
-    fetch("https://countryflagsapi.com/png/brazil", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log("Hi"))
-    .catch(error => console.log('error', error));
+    useEffect(()=>{
+      fetch(`https://countryflagsapi.com/png/arg`, requestOptions)
+      .then(response => response.text())
+      .then(result => setFlagImage(result))
+      .catch(error => console.log('error', error));
+    }, [numberQuestion])
+    
   let flagQuestions = [
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
@@ -210,12 +214,13 @@ function Question() {
     },
   ]
   let flagCode = flagQuestions[numberQuestion].flagCode
+  let urlImage = `https://countryflagsapi.com/png/${flagCode}`
   console.log(flagCode);
   
   return (
       <section>
         <h2>{flagQuestions[numberQuestion].questionText}</h2>
-        <img src={LogoWorld} alt="" />
+        <img src={urlImage} alt="" />
         <button>A Texto 1</button>
         <button>B Texto 2</button>
         <button>C Texto 3</button>
