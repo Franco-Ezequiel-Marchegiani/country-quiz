@@ -226,12 +226,18 @@ function Question() {
         <img className='logoWorld' src={LogoWorld} alt="" />
         <img className='imageFlag' src={urlImage} alt="" />
         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
-          <button className='btnAnswer hoverSelect' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
+          <div className='btnContainer'>
+                <button className='btnAnswer hoverSelect' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
+                <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} />
+                <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} />
+          </div>
+          <div className='btnContainer'>
           <button className='btnAnswer wrongAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
+
+          </div>
           <button className='btnAnswer correctAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
           <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
-          <FontAwesomeIcon icon={solid('user-secret')} />
-          <FontAwesomeIcon icon={solid('circle-check')} />
+          
           <div className='btnNextContainer'>
             <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={() =>{
                 setAnswerSelected("")
