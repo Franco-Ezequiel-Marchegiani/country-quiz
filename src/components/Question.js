@@ -221,12 +221,12 @@ function Question() {
   return (
       <section className='questionContainer'>
         <img className='logoWorld' src={LogoWorld} alt="" />
+        <img className='imageFlag' src={urlImage} alt="" />
         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
-        <img src={urlImage} alt="" />
-        <button>A Texto 1</button>
-        <button>B Texto 2</button>
-        <button>C Texto 3</button>
-        <button>D Texto 4</button>
+        <button><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
+        <button><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
+        <button><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
+        <button><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
         {/* Si el usuario falla */}
         {/* <p>Results</p>
         <span>You got 4 correct answers</span>

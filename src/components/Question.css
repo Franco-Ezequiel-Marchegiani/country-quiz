@@ -1,18 +1,23 @@
 .questionContainer{
     background-color: #fff;
     width: 464px;
-    height: 515px;
+    height: 629px;
     margin: auto;
     border-radius: 24px;
     position: relative;
+    padding: 0px 32px;
 }
 .logoWorld{
     position: absolute;
     right: 0;
     top: -70px;
 }
-.questionText{
+.imageFlag{
+    width: 84px;
+    height: 54px;
     padding-top: 68px;
+}
+.questionText{
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
