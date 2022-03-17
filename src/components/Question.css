@@ -73,6 +73,7 @@
     font-size: 18px;
     line-height: 27px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 @media only screen and (min-width: 420px){
     .textAnswer{

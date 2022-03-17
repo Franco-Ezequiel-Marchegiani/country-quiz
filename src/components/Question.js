@@ -3,7 +3,7 @@ import LogoWorld from '../images/logoWorld.svg'
 import './Question.css';
 function Question() {
 
-  let [numberQuestion, setNumberQuestion] = useState(2)
+  let [numberQuestion, setNumberQuestion] = useState(0)
   let [flagImage, setFlagImage] = useState();
   let [answerSelected, setAnswerSelected] = useState("");
   var myHeaders = new Headers();
@@ -229,7 +229,7 @@ function Question() {
         <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
         <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
         <div className='btnNextContainer'>
-        <button className={answerSelected === "" ? "btnNextHide" : "btnNext"}>Next</button>
+        <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={() => setAnswerSelected("")}>Next</button>
         </div>
         {/* Si el usuario falla */}
         {/* <p>Results</p>
