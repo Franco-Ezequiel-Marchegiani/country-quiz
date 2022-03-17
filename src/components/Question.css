@@ -57,9 +57,6 @@
     display: flex;
     justify-content: flex-end;
 }
-.btnNextHide{
-    display: none;
-}
 .btnNext{
     margin: 0;
     width: 116px;
@@ -74,6 +71,14 @@
     line-height: 27px;
     color: #FFFFFF;
     cursor: pointer;
+}
+.btnNextHide{
+    display: none;
+}
+.wrongAnswer{
+    background: #EA8282;
+    border: none;
+    color: #FFFFFF;
 }
 @media only screen and (min-width: 420px){
     .textAnswer{
