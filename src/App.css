@@ -2,6 +2,9 @@
 
 }
 .containerAll h1{
+    width: 525px;
+    padding-top: 120px;
+    margin: auto;
     color: #F2F2F2;
     font-style: normal;
     font-weight: 700;

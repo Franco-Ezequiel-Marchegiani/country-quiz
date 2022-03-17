@@ -24,7 +24,7 @@
     line-height: 36px;
     color: #2F527B;
 }
-.questionContainer button{
+.btnAnswer{
     width: 100%;
     height: 56px;
     background: #FFFFFF;
@@ -38,6 +38,11 @@
     color: rgba(96, 102, 208, 0.8);
     margin-bottom: 24px;
     position: relative;
+}
+.hoverSelect{
+    color: #FFFFFF;
+    background: #F9A826;
+    border: none;
 }
 .letterOfOptionAnswer{
     position: absolute;
