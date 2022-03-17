@@ -80,6 +80,11 @@
     border: none;
     color: #FFFFFF;
 }
+.correctAnswer{
+    background: #60BF88;
+    border: none;
+    color: #FFFFFF;
+}
 @media only screen and (min-width: 420px){
     .textAnswer{
         right: 25%;
