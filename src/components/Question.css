@@ -57,6 +57,9 @@
     display: flex;
     justify-content: flex-end;
 }
+.btnNextHide{
+    display: none;
+}
 .btnNext{
     margin: 0;
     width: 116px;

@@ -5,6 +5,7 @@ function Question() {
 
   let [numberQuestion, setNumberQuestion] = useState(2)
   let [flagImage, setFlagImage] = useState();
+  let [answerSelected, setAnswerSelected] = useState("");
   var myHeaders = new Headers();
     myHeaders.append("apikey", "Q1dDLxCfahEE8WEQFGghtx7OQtTEWmUo");
 
@@ -228,7 +229,7 @@ function Question() {
         <button className='btnAnswer '><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
         <button className='btnAnswer '><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
         <div className='btnNextContainer'>
-        <button className='btnNext'>Next</button>
+        <button className={answerSelected === "" ? "btnNextHide" : "btnNext"}>Next</button>
         </div>
         {/* Si el usuario falla */}
         {/* <p>Results</p>
