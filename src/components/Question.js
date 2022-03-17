@@ -227,6 +227,7 @@ function Question() {
         <button className='btnAnswer '><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
         <button className='btnAnswer '><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
         <button className='btnAnswer '><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
+        <button className='btnNext'>Next</button>
         {/* Si el usuario falla */}
         {/* <p>Results</p>
         <span>You got 4 correct answers</span>
