@@ -37,7 +37,15 @@
     line-height: 27px;
     color: rgba(96, 102, 208, 0.8);
     margin-bottom: 24px;
+    position: relative;
 }
 .letterOfOptionAnswer{
-
+    position: absolute;
+    left: 20px;
+    font-size: 26px;
+}
+.textAnswer{
+    font-size: 18px;
+    position: relative;
+    right: 120px;
 }
