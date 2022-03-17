@@ -228,8 +228,10 @@ function Question() {
         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
           <div className='btnContainer'>
                 <button className='btnAnswer hoverSelect' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
-                <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} />
-                <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} />
+                {answerSelected !== "" && flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
+                 <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
+                 : 
+                 <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} />}
           </div>
           <div className='btnContainer'>
                 <button className='btnAnswer wrongAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
