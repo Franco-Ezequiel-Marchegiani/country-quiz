@@ -27,7 +27,7 @@ fetch("https://countryflagsapi.com/svg/bra", requestOptions)
       <h1>Country Quiz</h1>
         <Question/>
       <footer>
-        <p>Created by <Link to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
+        <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
       </footer>
 
     </main>

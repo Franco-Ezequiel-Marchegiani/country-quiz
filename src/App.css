@@ -26,3 +26,7 @@ footer p{
     line-height: 17px;
     color: #F2F2F2;
 }
+.footerLink{
+    text-decoration: none;
+    color: #F2F2F2;
+}
