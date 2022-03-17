@@ -58,4 +58,7 @@
 .btnNext{
     position: absolute;
     bottom: 0;
+    width: 116px;
+    height: 56px;
+    
 }
