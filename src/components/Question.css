@@ -38,6 +38,7 @@
     color: rgba(96, 102, 208, 0.8);
     margin-bottom: 24px;
     position: relative;
+    cursor: pointer;
 }
 .hoverSelect{
     color: #FFFFFF;
