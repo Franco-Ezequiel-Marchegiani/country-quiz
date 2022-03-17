@@ -224,10 +224,10 @@ function Question() {
         <img className='logoWorld' src={LogoWorld} alt="" />
         <img className='imageFlag' src={urlImage} alt="" />
         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
-        <button className='btnAnswer hoverSelect'onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
-        <button className='btnAnswer '><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
-        <button className='btnAnswer '><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
-        <button className='btnAnswer '><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
+        <button className='btnAnswer hoverSelect' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
+        <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
+        <button className='btnAnswer'><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
+        <button className='btnAnswer'><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
         <div className='btnNextContainer'>
         <button className={answerSelected === "" ? "btnNextHide" : "btnNext"}>Next</button>
         </div>
