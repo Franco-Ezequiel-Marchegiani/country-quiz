@@ -241,7 +241,11 @@ function Question() {
                 <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} />
                 <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} />
           </div>
-          <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
+          <div>
+                <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
+                <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} />
+                <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} />
+          </div>
           
           <div className='btnNextContainer'>
             <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={() =>{
