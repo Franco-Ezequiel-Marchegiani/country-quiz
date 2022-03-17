@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import LogoWorld from '../images/logoWorld.svg'
 import './Question.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
 function Question() {
 
   let [numberQuestion, setNumberQuestion] = useState(0)
@@ -228,6 +230,8 @@ function Question() {
           <button className='btnAnswer wrongAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
           <button className='btnAnswer correctAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
           <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
+          <FontAwesomeIcon icon={solid('user-secret')} />
+          <FontAwesomeIcon icon={solid('circle-check')} />
           <div className='btnNextContainer'>
             <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={() =>{
                 setAnswerSelected("")
