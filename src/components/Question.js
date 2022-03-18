@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import LogoWorld from '../images/logoWorld.svg'
 import './Question.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +8,8 @@ function Question() {
   let [numberQuestion, setNumberQuestion] = useState(0)
   let [answerSelected, setAnswerSelected] = useState("");
 
+  let btn1 = useRef();
+  console.log(btn1.current);
   let flagQuestions = [
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
@@ -206,13 +208,19 @@ function Question() {
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
   console.log(flagCode);
   
+  const btnHoverIn1 = () =>{
+    btn1.current.style.backgroundColor = "#F9A826";
+  }
+  const btnHoverOut1 = ()=>{
+    btn1.current.style.backgroundColor = "white";
+  }
   return (
       <section className='questionContainer'>
         <img className='logoWorld' src={LogoWorld} alt="" />
         <img className='imageFlag' src={urlImage} alt="" />
         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
           <div className='btnContainer'>
-                <button
+                <button ref={btn1}
                  className={
                   answerSelected !== "" ?
                   flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
@@ -221,7 +229,7 @@ function Question() {
                   "btnAnswer correctAnswer"
                   : ""
                   : "btnAnswer"
-                  } onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
+                  } onMouseOver={btnHoverIn1} onMouseOut={btnHoverOut1} onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
