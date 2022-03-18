@@ -233,9 +233,8 @@ function Question() {
                  : ""
                  }
           </div>
-          <div>
+          <div className='btnContainer'>
                 <button className='btnAnswer correctAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
-                <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
