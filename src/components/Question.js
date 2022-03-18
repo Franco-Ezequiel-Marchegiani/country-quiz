@@ -244,7 +244,7 @@ function Question() {
                  : ""
                  }
           </div>
-          <div>
+          <div className='btnContainer'>
                 <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
                 <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} />
                 <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} />
