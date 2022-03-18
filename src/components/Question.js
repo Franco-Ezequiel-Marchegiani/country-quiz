@@ -1,34 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import LogoWorld from '../images/logoWorld.svg'
 import './Question.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 function Question() {
 
   let [numberQuestion, setNumberQuestion] = useState(0)
-  let [flagImage, setFlagImage] = useState();
   let [answerSelected, setAnswerSelected] = useState("");
-  var myHeaders = new Headers();
-    myHeaders.append("apikey", "Q1dDLxCfahEE8WEQFGghtx7OQtTEWmUo");
 
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow',
-      headers: myHeaders
-    };
-    useEffect(()=>{
-      fetch(`https://countryflagsapi.com/png/arg`, requestOptions)
-      .then(response => response.text())
-      .then(result => setFlagImage(result))
-      .catch(error => console.log('error', error));
-    }, [numberQuestion])
-    
   let flagQuestions = [
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
       flagCode: "arg",
       answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
+        { answerText: "Azul", isCorrect: true},
         { answerText: "Verde", isCorrect: false},
         { answerText: "Blanco", isCorrect: true},
         { answerText: "Violeta", isCorrect: false},
@@ -125,7 +110,7 @@ function Question() {
       ]
     }
   ]
-  let countriesQuestions = [
+  /* let countriesQuestions = [
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
       answerOptiones: [
@@ -216,7 +201,7 @@ function Question() {
         { answerText: "Violeta", isCorrect: false},
       ]
     },
-  ]
+  ] */
   let flagCode = flagQuestions[numberQuestion].flagCode;
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
   console.log(flagCode);
@@ -231,21 +216,34 @@ function Question() {
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
-                 : <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> : ""
+                 : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? 
+                 <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
+                 : ""
+                 : ""
                  }
           </div>
           <div className='btnContainer'>
                 <button className='btnAnswer wrongAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
                 {answerSelected !== "" ?
-                flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
+                flagQuestions[numberQuestion].answerOptiones[1].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
-                 : <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> : ""
+                 : flagQuestions[numberQuestion].answerOptiones[1].isCorrect === true ? 
+                 <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
+                 : ""
+                 : ""
                  }
           </div>
           <div>
                 <button className='btnAnswer correctAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
-                <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} />
-                <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} />
+                <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
+                {answerSelected !== "" ?
+                flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
+                 <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
+                 : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? 
+                 <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
+                 : ""
+                 : ""
+                 }
           </div>
           <div>
                 <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
