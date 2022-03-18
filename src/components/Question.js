@@ -13,7 +13,7 @@ function Question() {
       questionText: "De qué color es el caballo blanco de San Martín?",
       flagCode: "arg",
       answerOptiones: [
-        { answerText: "Azul", isCorrect: true},
+        { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
         { answerText: "Blanco", isCorrect: true},
         { answerText: "Violeta", isCorrect: false},
@@ -236,9 +236,9 @@ function Question() {
           <div className='btnContainer'>
                 <button className='btnAnswer correctAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>Texto 3</span></button>
                 {answerSelected !== "" ?
-                flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
+                flagQuestions[numberQuestion].answerOptiones[2].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
-                 : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? 
+                 : flagQuestions[numberQuestion].answerOptiones[2].isCorrect === true ? 
                  <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
                  : ""
                  : ""
@@ -246,8 +246,14 @@ function Question() {
           </div>
           <div className='btnContainer'>
                 <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
-                <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} />
-                <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} />
+                {answerSelected !== "" ?
+                flagQuestions[numberQuestion].answerOptiones[3].isCorrect === false ?
+                 <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
+                 : flagQuestions[numberQuestion].answerOptiones[3].isCorrect === true ? 
+                 <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
+                 : ""
+                 : ""
+                 }
           </div>
           
           <div className='btnNextContainer'>
