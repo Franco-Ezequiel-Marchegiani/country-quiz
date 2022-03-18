@@ -212,7 +212,16 @@ function Question() {
         <img className='imageFlag' src={urlImage} alt="" />
         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
           <div className='btnContainer'>
-                <button className='btnAnswer hoverSelect' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
+                <button
+                 className={
+                  answerSelected !== "" ?
+                  flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
+                  "btnAnswer wrongAnswer"
+                  : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? 
+                  "btnAnswer correctAnswer"
+                  : ""
+                  : "btnAnswer"
+                  } onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
