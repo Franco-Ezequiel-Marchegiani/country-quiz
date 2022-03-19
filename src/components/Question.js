@@ -7,7 +7,8 @@ function Question() {
 
   let [numberQuestion, setNumberQuestion] = useState(0)
   let [answerSelected, setAnswerSelected] = useState("");
-  let [onHover, setOnHover] = useState(false);
+  let [onHoverBtn1, setOnHoverBtn1] = useState(false);
+  let [onHoverBtn2, setOnHoverBtn2] = useState(false);
   let flagQuestions = [
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
@@ -206,19 +207,13 @@ function Question() {
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
   console.log(flagCode);
   
-  let btnClassNumber1 = !onHover ? "btnAnswer" : "btnAnswer hoverSelect"
-  let btnClassNumber2 = answerSelected !== "" ?
-  flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
-  "btnAnswer wrongAnswer"
-  : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? 
-  "btnAnswer correctAnswer"
-  : ""
-  : "btnAnswer"
+  let btnClassNumber1Btn1 = !onHoverBtn1 ? "btnAnswer" : "btnAnswer hoverSelect"
+  let btnClassNumber2Btn1 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
+  let bothClassesBtn1 = btnClassNumber1Btn1 + " " + btnClassNumber2Btn1
 
-  let bothClasses = btnClassNumber1 + " " + btnClassNumber2
-  console.log(btnClassNumber1);
-  console.log(btnClassNumber2);
-  console.log(bothClasses);
+  let btnClassNumber1Btn2 = !onHoverBtn2 ? "btnAnswer" : "btnAnswer hoverSelect"
+  let btnClassNumber2Btn2 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
+  let bothClassesBtn2 = btnClassNumber1Btn2 + " " + btnClassNumber2Btn2
   return (
       <section className='questionContainer'>
         <img className='logoWorld' src={LogoWorld} alt="" />
@@ -226,7 +221,7 @@ function Question() {
         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
           <div className='btnContainer'>
                 <button
-                 className={bothClasses} onMouseOver={()=> setOnHover(true)} onMouseOut={()=> setOnHover(false)} onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
+                 className={bothClassesBtn1} onMouseOver={()=> setOnHoverBtn1(true)} onMouseOut={()=> setOnHoverBtn1(false)} onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>Texto 1</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
@@ -237,7 +232,7 @@ function Question() {
                  }
           </div>
           <div className='btnContainer'>
-                <button className='btnAnswer wrongAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
+                <button className={bothClassesBtn2} onMouseOver={()=> setOnHoverBtn2(true)} onMouseOut={()=> setOnHoverBtn2(false)} onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>Texto 2</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[1].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
