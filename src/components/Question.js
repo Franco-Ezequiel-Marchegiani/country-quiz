@@ -224,6 +224,12 @@ function Question() {
   let btnClassNumber1Btn3 = !onHoverBtn3 ? "btnAnswer" : "btnAnswer hoverSelect"
   let btnClassNumber2Btn3 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
   let bothClassesBtn3 = btnClassNumber1Btn3 + " " + btnClassNumber2Btn3
+
+
+  let btnClassNumber1Btn4 = !onHoverBtn4 ? "btnAnswer" : "btnAnswer hoverSelect"
+  let btnClassNumber2Btn4 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
+  let bothClassesBtn4 = btnClassNumber1Btn4 + " " + btnClassNumber2Btn4
+
   return (
       <section className='questionContainer'>
         <img className='logoWorld' src={LogoWorld} alt="" />
