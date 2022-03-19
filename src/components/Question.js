@@ -221,8 +221,7 @@ function Question() {
 
 
   let btnClassNumber1Btn3 = !onHoverBtn3 ? "btnAnswer" : "btnAnswer hoverSelect"
-  let btnClassNumber2Btn3 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[2].isCorrect === false ?
-   "wrongAnswer"
+  let btnClassNumber2Btn3 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[2].isCorrect === false ? "wrongAnswer"
    : flagQuestions[numberQuestion].answerOptiones[2].isCorrect === true ? 
    "correctAnswer"
    : ""
