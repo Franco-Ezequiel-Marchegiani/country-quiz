@@ -270,7 +270,7 @@ function Question() {
                  }
           </div>
           <div className='btnContainer'>
-                <button className='btnAnswer' onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
+                <button className={bothClassesBtn4} onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>Texto 4</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[3].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
