@@ -209,13 +209,21 @@ function Question() {
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
   console.log(flagCode);
   
+  /* Las variables son para ahorrar código en el return para añadir y quitar las clases para los estilos de hover */
+
   let btnClassNumber1Btn1 = !onHoverBtn1 ? "btnAnswer" : "btnAnswer hoverSelect"
   let btnClassNumber2Btn1 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
   let bothClassesBtn1 = btnClassNumber1Btn1 + " " + btnClassNumber2Btn1
 
+
   let btnClassNumber1Btn2 = !onHoverBtn2 ? "btnAnswer" : "btnAnswer hoverSelect"
   let btnClassNumber2Btn2 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
   let bothClassesBtn2 = btnClassNumber1Btn2 + " " + btnClassNumber2Btn2
+
+
+  let btnClassNumber1Btn3 = !onHoverBtn3 ? "btnAnswer" : "btnAnswer hoverSelect"
+  let btnClassNumber2Btn3 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
+  let bothClassesBtn3 = btnClassNumber1Btn3 + " " + btnClassNumber2Btn3
   return (
       <section className='questionContainer'>
         <img className='logoWorld' src={LogoWorld} alt="" />
