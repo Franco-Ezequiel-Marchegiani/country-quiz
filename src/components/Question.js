@@ -207,7 +207,6 @@ function Question() {
   ] */
   let flagCode = flagQuestions[numberQuestion].flagCode;
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
-  console.log(flagCode);
   
   /* Las variables son para ahorrar código en el return para añadir y quitar las clases para los estilos de hover */
 
@@ -217,17 +216,24 @@ function Question() {
 
 
   let btnClassNumber1Btn2 = !onHoverBtn2 ? "btnAnswer" : "btnAnswer hoverSelect"
-  let btnClassNumber2Btn2 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
+  let btnClassNumber2Btn2 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[1].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[1].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
   let bothClassesBtn2 = btnClassNumber1Btn2 + " " + btnClassNumber2Btn2
 
 
   let btnClassNumber1Btn3 = !onHoverBtn3 ? "btnAnswer" : "btnAnswer hoverSelect"
-  let btnClassNumber2Btn3 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
+  let btnClassNumber2Btn3 = answerSelected !== "" ?
+  flagQuestions[numberQuestion].answerOptiones[2].isCorrect === false ?
+   "wrongAnswer"
+   : flagQuestions[numberQuestion].answerOptiones[2].isCorrect === true ? 
+   "correctAnswer"
+   : ""
+   : ""
   let bothClassesBtn3 = btnClassNumber1Btn3 + " " + btnClassNumber2Btn3
 
+  console.log(bothClassesBtn3);
 
   let btnClassNumber1Btn4 = !onHoverBtn4 ? "btnAnswer" : "btnAnswer hoverSelect"
-  let btnClassNumber2Btn4 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
+  let btnClassNumber2Btn4 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[3].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[3].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
   let bothClassesBtn4 = btnClassNumber1Btn4 + " " + btnClassNumber2Btn4
 
   return (
