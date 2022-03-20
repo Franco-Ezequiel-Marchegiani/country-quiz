@@ -102,6 +102,7 @@ function Question() {
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
+      questionTextEnglish: "Which country does this flag belong to",
       flagCode: "mhl",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
