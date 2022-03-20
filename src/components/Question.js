@@ -17,10 +17,10 @@ function Question() {
       questionTextEnglish: "Which country does this flag belong to",
       flagCode: "arg",
       answerOptiones: [
-        { answerText: "Nueva Zelanda",answerTextEnglish: "", isCorrect: false},
-        { answerText: "Brasil", isCorrect: false},
-        { answerText: "Argentina", isCorrect: true},
-        { answerText: "Polonia", isCorrect: false},
+        { answerText: "Nueva Zelanda",answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Brasil", answerTextEnglish: "Brazil", isCorrect: false},
+        { answerText: "Argentina", answerTextEnglish: "Argentina", isCorrect: true},
+        { answerText: "Polonia",answerTextEnglish: "Polish", isCorrect: false},
       ]
     },
     {
