@@ -43,7 +43,7 @@ function Question() {
       ]
     },
     {
-      questionText: "De qué color es el caballo blanco de San Martín4",
+      questionText: "A qué país corresponde esta bandera?",
       flagCode: "prt",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
