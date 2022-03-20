@@ -13,7 +13,7 @@ function Question() {
   let [onHoverBtn4, setOnHoverBtn4] = useState(false);
   let flagQuestions = [
     {
-      questionText: "De qué color es el caballo blanco de San Martín?",
+      questionText: "A qué país corresponde esta bandera?",
       flagCode: "arg",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
