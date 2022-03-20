@@ -13,7 +13,8 @@ function Question() {
   let [onHoverBtn4, setOnHoverBtn4] = useState(false);
   let flagQuestions = [
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
+      questionTextEnglish: "Which country does this flag belong to",
       flagCode: "arg",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -23,7 +24,7 @@ function Question() {
       ]
     },
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
       flagCode: "br",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -33,7 +34,7 @@ function Question() {
       ]
     },
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
       flagCode: "lux",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -43,7 +44,7 @@ function Question() {
       ]
     },
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
       flagCode: "prt",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -53,7 +54,7 @@ function Question() {
       ]
     },
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
       flagCode: "usa",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -63,7 +64,7 @@ function Question() {
       ]
     },
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
       flagCode: "nzl",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -73,7 +74,7 @@ function Question() {
       ]
     },
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
       flagCode: "nor",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -83,7 +84,7 @@ function Question() {
       ]
     },
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
       flagCode: "mex",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -93,7 +94,7 @@ function Question() {
       ]
     },
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
       flagCode: "mhl",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -103,7 +104,7 @@ function Question() {
       ]
     },
     {
-      questionText: "A qué país corresponde esta bandera?",
+      questionText: "A qué país le pertenece esta bandera?",
       flagCode: "maf",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
