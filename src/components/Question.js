@@ -51,8 +51,8 @@ function Question() {
       flagCode: "prt",
       answerOptiones: [
         { answerText: "Azul", answerTextEnglish: "New Zealand", isCorrect: false},
-        { answerText: "Verde", answerTextEnglish: "New Zealand", isCorrect: false},
-        { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Portugal", answerTextEnglish: "Portugal", isCorrect: true},
+        { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
