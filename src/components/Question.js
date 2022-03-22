@@ -107,7 +107,7 @@ function Question() {
       answerOptiones: [
         { answerText: "Republic Of North Macedonia", answerTextEnglish: "Republic Of North Macedonia", isCorrect: false},
         { answerText: "Montenegro", answerTextEnglish: "Montenegro", isCorrect: false},
-        { answerText: "Madagascar", answerTextEnglish: "Madagascar", isCorrect: true},
+        { answerText: "Madagascar", answerTextEnglish: "Madagascar", isCorrect: false},
         { answerText: "Las islas marshall", answerTextEnglish: "The Marshall Islands", isCorrect: false},
       ]
     },
