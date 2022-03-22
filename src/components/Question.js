@@ -107,7 +107,7 @@ function Question() {
       answerOptiones: [
         { answerText: "Azul", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Verde", answerTextEnglish: "New Zealand", isCorrect: false},
-        { answerText: "Blanco", answerTextEnglish: "Madagascar", isCorrect: true},
+        { answerText: "Madagascar", answerTextEnglish: "Madagascar", isCorrect: true},
         { answerText: "Las islas marshall", answerTextEnglish: "The Marshall Islands", isCorrect: false},
       ]
     },
