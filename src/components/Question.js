@@ -62,7 +62,7 @@ function Question() {
       flagCode: "usa",
       answerOptiones: [
         { answerText: "Los Estados Unidos de América", answerTextEnglish: "The United States Of America", isCorrect: true},
-        { answerText: "Verde", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Uruguay", answerTextEnglish: "Uruguay", isCorrect: false},
         { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
