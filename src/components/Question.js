@@ -72,9 +72,9 @@ function Question() {
       questionTextEnglish: "Which country does this flag belong to",
       flagCode: "nzl",
       answerOptiones: [
-        { answerText: "Azul", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Panama", answerTextEnglish: "Panama", isCorrect: false},
         { answerText: "Nepal", answerTextEnglish: "Nepal", isCorrect: false},
-        { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Nueva Zelanda", answerTextEnglish: "New Zealand", isCorrect: true},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
