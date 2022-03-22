@@ -85,7 +85,7 @@ function Question() {
       answerOptiones: [
         { answerText: "Noruega", answerTextEnglish: "Norway", isCorrect: true},
         { answerText: "Irlanda del Norte", answerTextEnglish: "Northern Ireland", isCorrect: false},
-        { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Nigeria", answerTextEnglish: "Nigeria", isCorrect: false},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
