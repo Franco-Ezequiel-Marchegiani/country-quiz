@@ -73,7 +73,7 @@ function Question() {
       flagCode: "nzl",
       answerOptiones: [
         { answerText: "Azul", answerTextEnglish: "New Zealand", isCorrect: false},
-        { answerText: "Verde", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Nepal", answerTextEnglish: "Nepal", isCorrect: false},
         { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: true},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
