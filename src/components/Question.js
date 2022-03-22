@@ -117,7 +117,7 @@ function Question() {
       flagCode: "maf",
       answerOptiones: [
         { answerText: "Francia", answerTextEnglish: "France", isCorrect: true},
-        { answerText: "Paraguay", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Paraguay", answerTextEnglish: "Paraguay", isCorrect: false},
         { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
