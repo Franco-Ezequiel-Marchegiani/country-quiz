@@ -96,7 +96,7 @@ function Question() {
       answerOptiones: [
         { answerText: "Italia", answerTextEnglish: "Italy", isCorrect: false},
         { answerText: "Iran", answerTextEnglish: "Iran", isCorrect: false},
-        { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Libia", answerTextEnglish: "Libya", isCorrect: false},
         { answerText: "Mexico", answerTextEnglish: "Mexico", isCorrect: true},
       ]
     },
