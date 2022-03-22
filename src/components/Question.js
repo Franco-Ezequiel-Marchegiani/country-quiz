@@ -119,7 +119,7 @@ function Question() {
         { answerText: "Francia", answerTextEnglish: "France", isCorrect: true},
         { answerText: "Paraguay", answerTextEnglish: "Paraguay", isCorrect: false},
         { answerText: "San Martín", answerTextEnglish: "Sint Maarten", isCorrect: false},
-        { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Violeta", answerTextEnglish: "The French Southern Territories", isCorrect: false},
       ]
     }
   ]
