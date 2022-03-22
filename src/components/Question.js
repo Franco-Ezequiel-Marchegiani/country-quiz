@@ -240,6 +240,31 @@ function Question() {
   let btnClassNumber2Btn4 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[3].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[3].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
   let bothClassesBtn4 = btnClassNumber1Btn4 + " " + btnClassNumber2Btn4
 
+  let onClickBtn1 = () =>{
+    if(flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true){
+      setContadorPuntaje(contadorPuntaje + 1)
+    }
+    setAnswerSelected("NextQuestion")
+  }
+  let onClickBtn2 = () =>{
+    if(flagQuestions[numberQuestion].answerOptiones[1].isCorrect === true){
+      setContadorPuntaje(contadorPuntaje + 1)
+    }
+    setAnswerSelected("NextQuestion")
+  }
+  let onClickBtn3 = () =>{
+    if(flagQuestions[numberQuestion].answerOptiones[2].isCorrect === true){
+      setContadorPuntaje(contadorPuntaje + 1)
+    }
+    setAnswerSelected("NextQuestion")
+  }
+  let onClickBtn4 = () =>{
+    if(flagQuestions[numberQuestion].answerOptiones[3].isCorrect === true){
+      setContadorPuntaje(contadorPuntaje + 1)
+    }
+    setAnswerSelected("NextQuestion")
+  }
+  console.log(contadorPuntaje);
   return (
       <section className='questionContainer'>
         <img className='logoWorld' src={LogoWorld} alt="" />
@@ -247,7 +272,7 @@ function Question() {
         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
           <div className='btnContainer'>
                 <button
-                 className={bothClassesBtn1} onMouseOver={()=> setOnHoverBtn1(true)} onMouseOut={()=> setOnHoverBtn1(false)} onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[0].answerText}</span></button>
+                 className={bothClassesBtn1} onMouseOver={()=> setOnHoverBtn1(true)} onMouseOut={()=> setOnHoverBtn1(false)} onClick={onClickBtn1}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[0].answerText}</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
@@ -258,7 +283,7 @@ function Question() {
                  }
           </div>
           <div className='btnContainer'>
-                <button className={bothClassesBtn2} onMouseOver={()=> setOnHoverBtn2(true)} onMouseOut={()=> setOnHoverBtn2(false)} onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[1].answerText}</span></button>
+                <button className={bothClassesBtn2} onMouseOver={()=> setOnHoverBtn2(true)} onMouseOut={()=> setOnHoverBtn2(false)} onClick={onClickBtn2}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[1].answerText}</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[1].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
@@ -269,7 +294,7 @@ function Question() {
                  }
           </div>
           <div className='btnContainer'>
-                <button className={bothClassesBtn3} onMouseOver={()=> setOnHoverBtn3(true)} onMouseOut={()=> setOnHoverBtn3(false)} onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[2].answerText}</span></button>
+                <button className={bothClassesBtn3} onMouseOver={()=> setOnHoverBtn3(true)} onMouseOut={()=> setOnHoverBtn3(false)} onClick={onClickBtn3}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[2].answerText}</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[2].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
@@ -280,7 +305,7 @@ function Question() {
                  }
           </div>
           <div className='btnContainer'>
-                <button className={bothClassesBtn4} onMouseOver={()=> setOnHoverBtn4(true)} onMouseOut={()=> setOnHoverBtn4(false)} onClick={() => setAnswerSelected("NextQuestion")}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[3].answerText}</span></button>
+                <button className={bothClassesBtn4} onMouseOver={()=> setOnHoverBtn4(true)} onMouseOut={()=> setOnHoverBtn4(false)} onClick={onClickBtn4}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[3].answerText}</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[3].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
