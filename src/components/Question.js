@@ -31,7 +31,7 @@ function Question() {
         { answerText: "Brasil", answerTextEnglish: "Brazil", isCorrect: true},
         { answerText: "Bélgica", answerTextEnglish: "Belgium", isCorrect: false},
         { answerText: "Bulgaria", answerTextEnglish: "Bulgaria", isCorrect: false},
-        { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Bolivia", answerTextEnglish: "Bolivia", isCorrect: false},
       ]
     },
     {
