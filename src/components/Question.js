@@ -106,7 +106,7 @@ function Question() {
       flagCode: "mhl",
       answerOptiones: [
         { answerText: "Azul", answerTextEnglish: "New Zealand", isCorrect: false},
-        { answerText: "Verde", answerTextEnglish: "Montenegro", isCorrect: false},
+        { answerText: "Montenegro", answerTextEnglish: "Montenegro", isCorrect: false},
         { answerText: "Madagascar", answerTextEnglish: "Madagascar", isCorrect: true},
         { answerText: "Las islas marshall", answerTextEnglish: "The Marshall Islands", isCorrect: false},
       ]
