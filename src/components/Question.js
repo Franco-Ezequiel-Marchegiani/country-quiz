@@ -64,7 +64,7 @@ function Question() {
         { answerText: "Los Estados Unidos de América", answerTextEnglish: "The United States Of America", isCorrect: true},
         { answerText: "Uruguay", answerTextEnglish: "Uruguay", isCorrect: false},
         { answerText: "South Africa", answerTextEnglish: "South Africa", isCorrect: false},
-        { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Puerto Rico", answerTextEnglish: "Puerto Rico", isCorrect: false},
       ]
     },
     {
