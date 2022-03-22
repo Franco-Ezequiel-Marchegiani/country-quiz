@@ -75,7 +75,7 @@ function Question() {
         { answerText: "Panama", answerTextEnglish: "Panama", isCorrect: false},
         { answerText: "Nepal", answerTextEnglish: "Nepal", isCorrect: false},
         { answerText: "Nueva Zelanda", answerTextEnglish: "New Zealand", isCorrect: true},
-        { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Puerto Rico", answerTextEnglish: "Puerto Rico", isCorrect: false},
       ]
     },
     {
