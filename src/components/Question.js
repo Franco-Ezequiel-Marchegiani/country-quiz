@@ -29,7 +29,7 @@ function Question() {
       flagCode: "br",
       answerOptiones: [
         { answerText: "Brasil", answerTextEnglish: "Brazil", isCorrect: true},
-        { answerText: "Verde", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Bélgica", answerTextEnglish: "Belgium", isCorrect: false},
         { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
