@@ -30,7 +30,7 @@ function Question() {
       answerOptiones: [
         { answerText: "Brasil", answerTextEnglish: "Brazil", isCorrect: true},
         { answerText: "Bélgica", answerTextEnglish: "Belgium", isCorrect: false},
-        { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Bulgaria", answerTextEnglish: "Bulgaria", isCorrect: false},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
