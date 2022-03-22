@@ -95,7 +95,7 @@ function Question() {
       flagCode: "mex",
       answerOptiones: [
         { answerText: "Italia", answerTextEnglish: "Italy", isCorrect: false},
-        { answerText: "Verde", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Iran", answerTextEnglish: "Iran", isCorrect: false},
         { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Mexico", answerTextEnglish: "Mexico", isCorrect: true},
       ]
