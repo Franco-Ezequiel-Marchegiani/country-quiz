@@ -84,7 +84,7 @@ function Question() {
       flagCode: "nor",
       answerOptiones: [
         { answerText: "Noruega", answerTextEnglish: "Norway", isCorrect: true},
-        { answerText: "Northern Ireland", answerTextEnglish: "Northern Ireland", isCorrect: false},
+        { answerText: "Irlanda del Norte", answerTextEnglish: "Northern Ireland", isCorrect: false},
         { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
