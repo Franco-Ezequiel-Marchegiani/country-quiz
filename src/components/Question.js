@@ -50,7 +50,7 @@ function Question() {
       questionTextEnglish: "Which country does this flag belong to",
       flagCode: "prt",
       answerOptiones: [
-        { answerText: "Azul", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Serbia", answerTextEnglish: "Serbia", isCorrect: false},
         { answerText: "Portugal", answerTextEnglish: "Portugal", isCorrect: true},
         { answerText: "Blanco", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Violeta", answerTextEnglish: "New Zealand", isCorrect: false},
