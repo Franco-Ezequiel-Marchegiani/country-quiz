@@ -11,6 +11,7 @@ function Question() {
   let [onHoverBtn2, setOnHoverBtn2] = useState(false);
   let [onHoverBtn3, setOnHoverBtn3] = useState(false);
   let [onHoverBtn4, setOnHoverBtn4] = useState(false);
+  let [contadorPuntaje, setContadorPuntaje] = useState(0);
   let flagQuestions = [
     {
       questionText: "A qué país le pertenece esta bandera?",
