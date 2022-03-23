@@ -3,10 +3,12 @@ import LogoWorld from '../images/logoWorld.svg'
 import './Question.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import { Button } from 'react-bootstrap';
 function Question() {
 
   let [numberQuestion, setNumberQuestion] = useState(0)
   let [answerSelected, setAnswerSelected] = useState("");
+  let [answerSelectedTest, setAnswerSelectedTest] = useState("");
   let [onHoverBtn1, setOnHoverBtn1] = useState(false);
   let [onHoverBtn2, setOnHoverBtn2] = useState(false);
   let [onHoverBtn3, setOnHoverBtn3] = useState(false);
@@ -221,9 +223,10 @@ function Question() {
   
   /* Las variables son para ahorrar código en el return para añadir y quitar las clases para los estilos de hover */
 
+  /* AÑADIR ESTILOS A LA CLASE QUE APARECE CUANDO SE CLICKEA UNA RESPUESTA PARA DESABILITAR LOS BOTONES Y EVITAR EL BUG */
   let btnClassNumber1Btn1 = !onHoverBtn1 ? "btnAnswer" : "btnAnswer hoverSelect"
   let btnClassNumber2Btn1 = answerSelected !== "" ? flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
-  let bothClassesBtn1 = btnClassNumber1Btn1 + " " + btnClassNumber2Btn1
+  let bothClassesBtn1 = btnClassNumber1Btn1 + " " + btnClassNumber2Btn1 +" "
 
 
   let btnClassNumber1Btn2 = !onHoverBtn2 ? "btnAnswer" : "btnAnswer hoverSelect"
@@ -245,6 +248,7 @@ function Question() {
       setContadorPuntaje(contadorPuntaje + 1)
     }
     setAnswerSelected("NextQuestion")
+    setAnswerSelectedTest("Test")
   }
   let onClickBtn2 = () =>{
     if(flagQuestions[numberQuestion].answerOptiones[1].isCorrect === true){
@@ -272,6 +276,7 @@ function Question() {
         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
           <div className='btnContainer'>
                 <button
+                disabled={answerSelected !== ""}
                  className={bothClassesBtn1} onMouseOver={()=> setOnHoverBtn1(true)} onMouseOut={()=> setOnHoverBtn1(false)} onClick={onClickBtn1}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[0].answerText}</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
