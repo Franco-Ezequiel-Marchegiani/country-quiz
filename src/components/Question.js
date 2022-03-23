@@ -247,7 +247,6 @@ function Question() {
       setContadorPuntaje(contadorPuntaje + 1)
     }
     setAnswerSelected("NextQuestion")
-    setAnswerSelectedTest("Test")
   }
   let onClickBtn2 = () =>{
     if(flagQuestions[numberQuestion].answerOptiones[1].isCorrect === true){
