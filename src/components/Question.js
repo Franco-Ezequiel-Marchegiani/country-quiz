@@ -299,7 +299,7 @@ function Question() {
                  }
           </div>
           <div className='btnContainer'>
-                <button className={bothClassesBtn3} onMouseOver={()=> setOnHoverBtn3(true)} onMouseOut={()=> setOnHoverBtn3(false)} onClick={onClickBtn3}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[2].answerText}</span></button>
+                <button disabled={answerSelected !== ""} className={bothClassesBtn3} onMouseOver={()=> setOnHoverBtn3(true)} onMouseOut={()=> setOnHoverBtn3(false)} onClick={onClickBtn3}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[2].answerText}</span></button>
                 {answerSelected !== "" ?
                 flagQuestions[numberQuestion].answerOptiones[2].isCorrect === false ?
                  <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
