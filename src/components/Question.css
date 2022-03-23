@@ -78,9 +78,6 @@
 .btnNextHide{
     display: none;
 }
-.test{
-    background: #ff0000;
-}
 .wrongAnswer{
     background: #EA8282;
     border: none;
