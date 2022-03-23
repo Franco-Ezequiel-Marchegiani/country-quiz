@@ -328,6 +328,7 @@ function Question() {
                         setNumberQuestion(numberQuestion + 1)  
                         setOnHoverBtn1(false)
                         setOnHoverBtn2(false)
+                        setOnHoverBtn3(false)
                         } }>
                             Next
                     </button>
