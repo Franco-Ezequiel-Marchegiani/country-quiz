@@ -8,7 +8,6 @@ function Question() {
 
   let [numberQuestion, setNumberQuestion] = useState(0)
   let [answerSelected, setAnswerSelected] = useState("");
-  let [answerSelectedTest, setAnswerSelectedTest] = useState("");
   let [onHoverBtn1, setOnHoverBtn1] = useState(false);
   let [onHoverBtn2, setOnHoverBtn2] = useState(false);
   let [onHoverBtn3, setOnHoverBtn3] = useState(false);
