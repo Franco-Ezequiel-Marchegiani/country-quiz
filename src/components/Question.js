@@ -274,7 +274,7 @@ function Question() {
       setOnHoverBtn1(false)
       setOnHoverBtn2(false)
       setOnHoverBtn3(false)
-    
+      setOnHoverBtn4(false)
   }
   return (
       <section className='questionContainer'>
