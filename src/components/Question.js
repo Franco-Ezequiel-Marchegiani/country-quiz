@@ -268,6 +268,9 @@ function Question() {
     setAnswerSelected("NextQuestion")
   }
   console.log(contadorPuntaje);
+  let nextBtnOnClick = () =>{
+    
+  }
   return (
       <section className='questionContainer'>
         {numberQuestion < 11 ?
@@ -321,7 +324,7 @@ function Question() {
                         : ""
                         }
                   </div>
-                  
+                  div#idName  
                   <div className='btnNextContainer'>
                     <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={() =>{
                         setAnswerSelected("")
