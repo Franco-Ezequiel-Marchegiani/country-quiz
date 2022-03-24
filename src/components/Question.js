@@ -269,6 +269,7 @@ function Question() {
   }
   console.log(contadorPuntaje);
   let nextBtnOnClick = () =>{
+      setAnswerSelected("")
     
   }
   return (
