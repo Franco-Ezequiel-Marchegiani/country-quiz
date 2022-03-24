@@ -271,6 +271,7 @@ function Question() {
   let nextBtnOnClick = () =>{
       setAnswerSelected("")
       setNumberQuestion(numberQuestion + 1)  
+      setOnHoverBtn1(false)
     
   }
   return (
