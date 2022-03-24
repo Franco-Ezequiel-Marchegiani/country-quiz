@@ -179,6 +179,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
+      questionTextEnglish: "Which country does this flag belong to",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
