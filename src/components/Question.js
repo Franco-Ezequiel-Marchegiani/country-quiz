@@ -329,7 +329,6 @@ function Question() {
                         : ""
                         }
                   </div>
-                  div#idName  
                   <div className='btnNextContainer'>
                     <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={() =>{
                         setAnswerSelected("")
