@@ -270,6 +270,7 @@ function Question() {
   console.log(contadorPuntaje);
   let nextBtnOnClick = () =>{
       setAnswerSelected("")
+      setNumberQuestion(numberQuestion + 1)  
     
   }
   return (
