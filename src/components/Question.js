@@ -272,6 +272,7 @@ function Question() {
       setAnswerSelected("")
       setNumberQuestion(numberQuestion + 1)  
       setOnHoverBtn1(false)
+      setOnHoverBtn2(false)
     
   }
   return (
