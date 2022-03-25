@@ -343,8 +343,8 @@ function Question() {
                   </div>
             </main> : 
             <main>
-              <h1>Hi</h1>
               <img src={LogoEnd} alt="" />
+              <h1>Result</h1>
             </main> }
         {/* Si el usuario falla */}
         {/* <p>Results</p>
