@@ -123,7 +123,8 @@ function Question() {
         { answerText: "San Martín", answerTextEnglish: "Sint Maarten", isCorrect: false},
         { answerText: "Los Territorios Australes Franceses", answerTextEnglish: "The French Southern Territories", isCorrect: false},
       ]
-    }
+    },
+    {}
   ]
   /* Kuala Lumpur is the capital of
   let countriesQuestions = [
@@ -273,7 +274,6 @@ function Question() {
     }
     setAnswerSelected("NextQuestion")
   }
-  console.log(contadorPuntaje);
   let nextBtnOnClick = () =>{
       setAnswerSelected("")
       setNumberQuestion(numberQuestion + 1)  
@@ -284,7 +284,7 @@ function Question() {
   }
   return (
       <section className='questionContainer'>
-        {numberQuestion < 11 ?
+        {numberQuestion < 10 ?
               <main>
                   <img className='logoWorld' src={LogoWorld} alt="" />
                   <img className='imageFlag' src={urlImage} alt="" />
@@ -336,14 +336,7 @@ function Question() {
                         }
                   </div>
                   <div className='btnNextContainer'>
-                    <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={() =>{
-                        setAnswerSelected("")
-                        setNumberQuestion(numberQuestion + 1)  
-                        setOnHoverBtn1(false)
-                        setOnHoverBtn2(false)
-                        setOnHoverBtn3(false)
-                        setOnHoverBtn4(false)
-                        } }>
+                    <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={nextBtnOnClick}>
                             Next
                     </button>
                   </div>
