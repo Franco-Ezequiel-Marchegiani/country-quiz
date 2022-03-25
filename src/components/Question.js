@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
-import LogoWorld from '../images/logoWorld.svg'
+import LogoWorld from '../images/logoWorld.svg';
+import LogoEnd from '../images/iconWin.svg'
 import './Question.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
@@ -343,6 +344,7 @@ function Question() {
             </main> : 
             <main>
               <h1>Hi</h1>
+              <img src={LogoEnd} alt="" />
             </main> }
         {/* Si el usuario falla */}
         {/* <p>Results</p>
