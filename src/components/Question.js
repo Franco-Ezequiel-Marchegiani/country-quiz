@@ -345,6 +345,7 @@ function Question() {
             <main>
               <img src={LogoEnd} alt="" />
               <h1>Result</h1>
+              <p>Respondiste 4 respuestas correctamente</p>
             </main> }
         {/* Si el usuario falla */}
         {/* <p>Results</p>
