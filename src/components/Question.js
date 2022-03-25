@@ -345,7 +345,7 @@ function Question() {
             <main>
               <img src={LogoEnd} alt="" />
               <h1>Result</h1>
-              <p >Respondiste 4 respuestas correctamente</p>
+              <p className='textResult'>Respondiste 4 respuestas correctamente</p>
               <button className='btnTryAgain'>Intentar nuevamente</button>
             </main> }
         {/* Si el usuario falla */}
