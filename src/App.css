@@ -1,4 +1,4 @@
-.containerAll h1{
+.titleApp{
     width: 85%;
     padding-top: 120px;
     margin: auto;
@@ -30,7 +30,7 @@ footer p{
     color: #dbfbff;
 }
 @media only screen and (min-width: 600px){
-    .containerAll h1{
+    .titleApp{
         width: 525px;
     }
 }

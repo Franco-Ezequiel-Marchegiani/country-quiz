@@ -112,6 +112,15 @@
     padding-top: 40px;
     width: 90%;
 }
+.titleResult{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #1D355D;
+    text-align: center;
+}
 @media only screen and (min-width: 420px){
     .textAnswer{
         right: 25%;

@@ -24,7 +24,7 @@ fetch("https://countryflagsapi.com/svg/bra", requestOptions)
   .catch(error => console.log('error', error));
   */
     <main className='containerAll'>
-      <h1>Country Quiz</h1>
+      <h1 className='titleApp'>Country Quiz</h1>
         <Question/>
       <footer>
         <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
