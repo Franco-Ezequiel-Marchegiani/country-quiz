@@ -146,7 +146,7 @@
     font-size: 18px;
     line-height: 27px;
     color: #1D355D;
-    
+    padding: 18px 40px;
 }
 @media only screen and (min-width: 420px){
     .textAnswer{
