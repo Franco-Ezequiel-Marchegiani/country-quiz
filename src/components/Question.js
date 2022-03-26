@@ -343,11 +343,14 @@ function Question() {
                   </div>
             </main> : 
             <main className='resultContainer'>
-              <img className='imageResult' src={LogoEnd} alt="" />
-              <h1 className='titleResult'>Result</h1>
-              <p className='textResult'>Respondiste <span>{contadorPuntaje}</span> respuestas correctamente</p>
-              <button className='btnTryAgain'>Intentar nuevamente</button>
-            </main> }
+                <img className='imageResult' src={LogoEnd} alt="" />
+                  <div>
+                      <h1 className='titleResult'>Result</h1>
+                      <p className='textResult'>Respondiste <span>{contadorPuntaje}</span> respuestas correctamente</p>
+                  </div>
+                <button className='btnTryAgain'>Intentar nuevamente</button>
+            </main> 
+            }
       </section>
   );
 }
