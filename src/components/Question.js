@@ -14,6 +14,7 @@ function Question() {
   let [onHoverBtn3, setOnHoverBtn3] = useState(false);
   let [onHoverBtn4, setOnHoverBtn4] = useState(false);
   let [contadorPuntaje, setContadorPuntaje] = useState(0);
+  let [wrongAnswerSelected, setWrongAnswerSelected ] = useState(false);
   let flagQuestions = [
     {
       questionText: "A qué país le pertenece esta bandera?",
@@ -260,6 +261,8 @@ function Question() {
   let onClickBtn2 = () =>{
     if(flagQuestions[numberQuestion].answerOptiones[1].isCorrect === true){
       setContadorPuntaje(contadorPuntaje + 1)
+    }else{
+      setWrongAnswerSelected(true)
     }
     setAnswerSelected("NextQuestion")
   }
@@ -282,6 +285,9 @@ function Question() {
       setOnHoverBtn2(false)
       setOnHoverBtn3(false)
       setOnHoverBtn4(false)
+      if(wrongAnswerSelected === true){
+        setNumberQuestion(10)
+      }
   }
   return (
       <section className='questionContainer'>
