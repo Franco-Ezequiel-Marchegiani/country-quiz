@@ -348,10 +348,6 @@ function Question() {
               <p className='textResult'>Respondiste <span>{contadorPuntaje}</span> respuestas correctamente</p>
               <button className='btnTryAgain'>Intentar nuevamente</button>
             </main> }
-        {/* Si el usuario falla */}
-        {/* <p>Results</p>
-        <span>You got 4 correct answers</span>
-        <button>Try again</button> */}
       </section>
   );
 }
