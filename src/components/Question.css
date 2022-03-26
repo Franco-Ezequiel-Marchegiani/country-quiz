@@ -53,8 +53,7 @@
 }
 .textAnswer{
     font-size: 18px;
-    position: relative;
-    right: 40px;
+    text-align: end;
 }
 .btnNextContainer{
     display: flex;
@@ -159,11 +158,6 @@
     padding: 18px 40px;
     cursor: pointer;
 }
-@media only screen and (min-width: 420px){
-    .textAnswer{
-        right: 25%;
-    }
-}
 @media only screen and (min-width: 600px){
     .questionContainer{
         width: 464px;
@@ -173,9 +167,6 @@
         position: absolute;
         right: 0;
         top: -70px;
-    }
-    .textAnswer{
-        right: 120px;
     }
     .imageResult{
         width: 70%;

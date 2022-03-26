@@ -15,6 +15,7 @@ function Question() {
   let [onHoverBtn4, setOnHoverBtn4] = useState(false);
   let [contadorPuntaje, setContadorPuntaje] = useState(0);
   let [wrongAnswerSelected, setWrongAnswerSelected ] = useState(false);
+  console.log(wrongAnswerSelected);
   let flagQuestions = [
     {
       questionText: "A qué país le pertenece esta bandera?",
@@ -255,12 +256,16 @@ function Question() {
   let onClickBtn1 = () =>{
     if(flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true){
       setContadorPuntaje(contadorPuntaje + 1)
+      setWrongAnswerSelected(false)
+    }else{
+      setWrongAnswerSelected(true)
     }
     setAnswerSelected("NextQuestion")
   }
   let onClickBtn2 = () =>{
     if(flagQuestions[numberQuestion].answerOptiones[1].isCorrect === true){
       setContadorPuntaje(contadorPuntaje + 1)
+      setWrongAnswerSelected(false)
     }else{
       setWrongAnswerSelected(true)
     }
@@ -269,12 +274,18 @@ function Question() {
   let onClickBtn3 = () =>{
     if(flagQuestions[numberQuestion].answerOptiones[2].isCorrect === true){
       setContadorPuntaje(contadorPuntaje + 1)
+      setWrongAnswerSelected(false)
+    }else{
+      setWrongAnswerSelected(true)
     }
     setAnswerSelected("NextQuestion")
   }
   let onClickBtn4 = () =>{
     if(flagQuestions[numberQuestion].answerOptiones[3].isCorrect === true){
       setContadorPuntaje(contadorPuntaje + 1)
+      setWrongAnswerSelected(false)
+    }else{
+      setWrongAnswerSelected(true)
     }
     setAnswerSelected("NextQuestion")
   }
@@ -289,6 +300,16 @@ function Question() {
         setNumberQuestion(10)
       }
   }
+  let restartBtnFunction = () =>{
+    setNumberQuestion(0)
+    setContadorPuntaje(0)
+  }
+  /* COSAS PENDIENTES POR HACER:
+  -El proyecto ya está hecho, queda dividirlo en pequeños componentes, para que no sea mucho código, y plasmar otra vista para las country
+  -Hacer una vista del home con dos botones que dirigan a un componente a otro
+  -Dividir por componentes, es muy importante, la vista de resultado puede estar tranquilamente en un componente nuevo y ser reutilizable,
+  y a su vez, llevar toda su lógica en ese componente
+  -Corregir Bug que hace que se vean así los textos*/
   return (
       <section className='questionContainer'>
         {numberQuestion < 10 ?
@@ -351,11 +372,11 @@ function Question() {
             <main className='resultContainer'>
                 <img className='imageResult' src={LogoEnd} alt="" />
                   <div>
-                      <h1 className='titleResult'>Result</h1>
+                      <h1 className='titleResult'>Resultado</h1>
                       <p className='textResult'>Respondiste <span>{contadorPuntaje}</span> respuestas correctamente</p>
                       {contadorPuntaje === 10 ? <p className='paragraphPerfectScore'>puntaje perfecto :)</p> : "" }
                   </div>
-                <button className='btnTryAgain' onClick={()=>{setNumberQuestion(0)}}>Intentar nuevamente</button>
+                <button className='btnTryAgain' onClick={restartBtnFunction}>Intentar nuevamente</button>
             </main> 
             }
       </section>
