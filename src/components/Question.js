@@ -348,7 +348,7 @@ function Question() {
                       <h1 className='titleResult'>Result</h1>
                       <p className='textResult'>Respondiste <span>{contadorPuntaje}</span> respuestas correctamente</p>
                   </div>
-                <button className='btnTryAgain'>Intentar nuevamente</button>
+                <button className='btnTryAgain' onClick={()=>{setNumberQuestion(0)}}>Intentar nuevamente</button>
             </main> 
             }
       </section>
