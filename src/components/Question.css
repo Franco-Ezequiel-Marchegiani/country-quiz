@@ -136,8 +136,17 @@
 }
 .btnTryAgain{
     border: 2px solid #1D355D;
+    background: #FFFFFF;
+    border-radius: 24px;
     box-sizing: border-box;
     border-radius: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #1D355D;
+    
 }
 @media only screen and (min-width: 420px){
     .textAnswer{
