@@ -343,7 +343,7 @@ function Question() {
                   </div>
             </main> : 
             <main>
-              <img src={LogoEnd} alt="" />
+              <img className='imageResult' src={LogoEnd} alt="" />
               <h1 className='titleResult'>Result</h1>
               <p className='textResult'>Respondiste 4 respuestas correctamente</p>
               <button className='btnTryAgain'>Intentar nuevamente</button>
