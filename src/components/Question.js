@@ -342,7 +342,7 @@ function Question() {
                     </button>
                   </div>
             </main> : 
-            <main>
+            <main className='resultContainer'>
               <img className='imageResult' src={LogoEnd} alt="" />
               <h1 className='titleResult'>Result</h1>
               <p className='textResult'>Respondiste 4 respuestas correctamente</p>
