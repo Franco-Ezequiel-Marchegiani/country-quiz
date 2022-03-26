@@ -134,6 +134,11 @@
     color: rgb(111, 207, 151);
     font-weight: 800;
 }
+.btnTryAgain{
+    border: 2px solid #1D355D;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
 @media only screen and (min-width: 420px){
     .textAnswer{
         right: 25%;
