@@ -231,6 +231,7 @@ function Question() {
         { answerText: "Violeta", isCorrect: false},
       ]
     },
+    {}
   ] */
   let flagCode = flagQuestions[numberQuestion].flagCode;
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
