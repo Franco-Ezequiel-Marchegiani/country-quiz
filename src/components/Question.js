@@ -133,7 +133,7 @@ function Question() {
   let countriesQuestions = [
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Buenos Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
