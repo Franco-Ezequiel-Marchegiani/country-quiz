@@ -204,7 +204,6 @@ function Question() {
     setNumberQuestion(0)
     setContadorPuntaje(0)
   }
-  
   /* COSAS PENDIENTES POR HACER:
   -El proyecto ya está hecho, queda dividirlo en pequeños componentes, para que no sea mucho código, y plasmar otra vista para las country
   -Hacer una vista del home con dos botones que dirigan a un componente a otro
