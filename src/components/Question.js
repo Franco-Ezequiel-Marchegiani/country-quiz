@@ -15,7 +15,6 @@ function Question() {
   let [onHoverBtn4, setOnHoverBtn4] = useState(false);
   let [contadorPuntaje, setContadorPuntaje] = useState(0);
   let [wrongAnswerSelected, setWrongAnswerSelected ] = useState(false);
-  console.log(wrongAnswerSelected);
   let flagQuestions = [
     {
       questionText: "A qué país le pertenece esta bandera?",
@@ -129,110 +128,6 @@ function Question() {
     },
     {}
   ]
-  /* Kuala Lumpur is the capital of
-  let countriesQuestions = [
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Buenos Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {}
-  ] */
   let flagCode = flagQuestions[numberQuestion].flagCode;
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
   
