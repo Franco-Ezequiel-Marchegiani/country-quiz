@@ -163,7 +163,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
@@ -173,7 +173,7 @@ function Question() {
     },
     {
       questionText: "De qué color es el caballo blanco de San Martín?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
