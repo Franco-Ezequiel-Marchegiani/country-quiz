@@ -182,7 +182,7 @@ function Question() {
       ]
     },
     {
-      questionText: "De qué color es el caballo blanco de San Martín?",
+      questionText: "¿Cual es la capital de Buenos Aires?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
