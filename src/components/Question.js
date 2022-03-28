@@ -132,7 +132,7 @@ function Question() {
   /* Kuala Lumpur is the capital of
   let countriesQuestions = [
     {
-      questionText: "De qué color es el caballo blanco de San Martín?",
+      questionText: "¿Cual es la capital de Buenos Aires?",
       questionTextEnglish: "Buenos Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
