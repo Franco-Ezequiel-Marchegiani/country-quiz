@@ -128,9 +128,21 @@ function Question() {
     },
     {}
   ]
+  let API_KEY = "227cad7b1e5b010eaf285fa83c61ba7a"
   let flagCode = flagQuestions[numberQuestion].flagCode;
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
-  
+  fetch('https://api.countrylayer.com/v2/all', {
+    method: 'GET',
+    headers: {
+      access_key : API_KEY,
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    mode: 'cors',
+    access_key: "227cad7b1e5b010eaf285fa83c61ba7a"
+  })
+  .then(response => response.json())
+  .then(data => console.log(data));
+
   
   /* Las variables son para ahorrar código en el return para añadir y quitar las clases para los estilos de hover */
   let btnClassNumber1Btn1 = !onHoverBtn1 ? "btnAnswer" : "btnAnswer hoverSelect"
