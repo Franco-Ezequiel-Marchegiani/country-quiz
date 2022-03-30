@@ -128,21 +128,6 @@ function Question() {
     },
     {}
   ]
-  let API_KEY = "227cad7b1e5b010eaf285fa83c61ba7a"
-  let flagCode = flagQuestions[numberQuestion].flagCode;
-  let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
-  fetch('https://api.countrylayer.com/v2/all', {
-    method: 'GET',
-    headers: {
-      access_key : API_KEY,
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    mode: 'cors',
-    access_key: "227cad7b1e5b010eaf285fa83c61ba7a"
-  })
-  .then(response => response.json())
-  .then(data => console.log(data));
-
   
   /* Las variables son para ahorrar código en el return para añadir y quitar las clases para los estilos de hover */
   let btnClassNumber1Btn1 = !onHoverBtn1 ? "btnAnswer" : "btnAnswer hoverSelect"
@@ -216,6 +201,8 @@ function Question() {
     setNumberQuestion(0)
     setContadorPuntaje(0)
   }
+  let flagCode = flagQuestions[numberQuestion].flagCode;
+  let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
   /* COSAS PENDIENTES POR HACER:
   -El proyecto ya está hecho, queda dividirlo en pequeños componentes, para que no sea mucho código, y plasmar otra vista para las country
   -Hacer una vista del home con dos botones que dirigan a un componente a otro
