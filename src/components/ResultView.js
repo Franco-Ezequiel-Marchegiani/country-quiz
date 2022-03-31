@@ -18,7 +18,7 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje}) {
         <div className='btnTryAgainContainer'>
 
         <button className='btnTryAgain' onClick={restartBtnFunction}>Intentar nuevamente</button>
-        <Link to="/"> <button className='btnTryAgain btnGoBackHome' onClick={restartBtnFunction}>Regresar al inicio</button></Link>
+        <Link to="/" className='btnGoBackHome'> <button className='btnTryAgain' onClick={restartBtnFunction}>Regresar al inicio</button></Link>
         </div>
     </main> 
   );
