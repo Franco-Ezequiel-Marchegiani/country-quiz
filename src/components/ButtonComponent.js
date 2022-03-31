@@ -2,8 +2,6 @@ import { useState } from 'react';
 import './Question.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-import LogoEnd from '../images/iconWin.svg';
-/* Queda pasar todo lo que requiere para su funcionamiento */
 function ButtonComponent({contadorPuntaje, flagQuestions, setContadorPuntaje, numberQuestion, setNumberQuestion,  bothClassesBtn1, bothClassesBtn2, bothClassesBtn3, bothClassesBtn4,answerSelected, setAnswerSelected, wrongAnswerSelected, setWrongAnswerSelected}) {
     /* Estas funciones se aplican al clickear cada botón & ejecutan la suma del puntaje & que se muestren las respuestas luego de haber clickeado */
     let [onHoverBtn1, setOnHoverBtn1] = useState(false);

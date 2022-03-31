@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import LogoWorld from '../images/logoWorld.svg';
-import LogoEnd from '../images/iconWin.svg';
 import './Question.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
-import { Button } from 'react-bootstrap';
 import ResultView from './ResultView';
 import ButtonComponent from './ButtonComponent';
 import flagQuestions from './ArrayQuestionsFlags'
