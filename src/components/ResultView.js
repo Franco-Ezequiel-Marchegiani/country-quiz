@@ -1,5 +1,6 @@
 import './Question.css';
 import LogoEnd from '../images/iconWin.svg';
+import { Link } from 'react-router-dom';
 /* Queda pasar todo lo que requiere para su funcionamiento */
 function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje}) {
   let restartBtnFunction = () =>{
@@ -17,7 +18,7 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje}) {
         <div className='btnTryAgainContainer'>
 
         <button className='btnTryAgain' onClick={restartBtnFunction}>Intentar nuevamente</button>
-         <button className='btnTryAgain btnGoBackHome' onClick={restartBtnFunction}>Regresar al inicio</button>
+        <Link to="/"> <button className='btnTryAgain btnGoBackHome' onClick={restartBtnFunction}>Regresar al inicio</button></Link>
         </div>
     </main> 
   );
