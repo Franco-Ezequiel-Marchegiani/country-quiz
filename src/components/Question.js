@@ -4,6 +4,7 @@ import './Question.css';
 import ResultView from './ResultView';
 import ButtonComponent from './ButtonComponent';
 import flagQuestions from './ArrayQuestionsFlags'
+import { Link } from 'react-router-dom';
 function Question() {
   
   let [numberQuestion, setNumberQuestion] = useState(0)
@@ -39,19 +40,26 @@ function Question() {
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
 
   return (
-      <section className='questionContainer'>
-            {numberQuestion < 10 ?
-                  <main>
-                      <img className='logoWorld' src={LogoWorld} alt="" />
-                      <img className='imageFlag' src={urlImage} alt="" />
-                      <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
-                      {/* Acá se pasa todo lo necesario para utilizar el componente ButtonComponent */}
-                        <ButtonComponent contadorPuntaje={contadorPuntaje} flagQuestions={flagQuestions} numberQuestion={numberQuestion}setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje} bothClassesBtn1={bothClassesBtn1} bothClassesBtn2={bothClassesBtn2} bothClassesBtn3={bothClassesBtn3} bothClassesBtn4={bothClassesBtn4} answerSelected={answerSelected} setAnswerSelected={setAnswerSelected} wrongAnswerSelected={wrongAnswerSelected} setWrongAnswerSelected={setWrongAnswerSelected} />
-                </main> 
-                : 
-                <ResultView contadorPuntaje={contadorPuntaje} setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje}/>
-            }
-      </section>
+    <main className='containerAll'>
+      {/* <h1 className='titleApp'>Country Quiz</h1> */}
+        <section className='questionContainer'>
+              {numberQuestion < 10 ?
+                    <main>
+                        <img className='logoWorld' src={LogoWorld} alt="" />
+                        <img className='imageFlag' src={urlImage} alt="" />
+                        <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
+                        {/* Acá se pasa todo lo necesario para utilizar el componente ButtonComponent */}
+                          <ButtonComponent contadorPuntaje={contadorPuntaje} flagQuestions={flagQuestions} numberQuestion={numberQuestion}setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje} bothClassesBtn1={bothClassesBtn1} bothClassesBtn2={bothClassesBtn2} bothClassesBtn3={bothClassesBtn3} bothClassesBtn4={bothClassesBtn4} answerSelected={answerSelected} setAnswerSelected={setAnswerSelected} wrongAnswerSelected={wrongAnswerSelected} setWrongAnswerSelected={setWrongAnswerSelected} />
+                  </main> 
+                  : 
+                  <ResultView contadorPuntaje={contadorPuntaje} setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje}/>
+              }
+        </section>
+      <footer>
+        <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
+      </footer>
+
+    </main>
   );
 }
 
