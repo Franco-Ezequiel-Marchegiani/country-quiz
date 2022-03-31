@@ -1,5 +1,6 @@
 import './Question.css';
 
+/* Queda pasar todo lo que requiere para su funcionamiento */
 function ResultView() {
   return (
     <main className='resultContainer'>
