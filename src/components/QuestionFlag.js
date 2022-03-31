@@ -5,7 +5,7 @@ import ResultView from './ResultView';
 import ButtonComponent from './ButtonComponent';
 import flagQuestions from './ArrayQuestionsFlags'
 import { Link } from 'react-router-dom';
-function Question() {
+function QuestionFlag() {
   
   let [numberQuestion, setNumberQuestion] = useState(0)
   let [answerSelected, setAnswerSelected] = useState("");
@@ -57,4 +57,4 @@ function Question() {
   );
 }
 
-export default Question;
+export default QuestionFlag;

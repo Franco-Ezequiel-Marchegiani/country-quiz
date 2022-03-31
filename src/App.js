@@ -1,5 +1,5 @@
 import './App.css';
-import Question from './components/Question';
+import QuestionFlag from './components/QuestionFlag';
 import { Link } from 'react-router-dom';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
           <section className='questionContainer'>
-            <Question/>
+            <QuestionFlag/>
             <h2>Bienvenido! Cual Quiz deseas realizar?</h2>
             <Link to="#"><button>Quiz de Capitales</button></Link>
             <Link to="#"><button>Quiz de Banderas</button></Link>
