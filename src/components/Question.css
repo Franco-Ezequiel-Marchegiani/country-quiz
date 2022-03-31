@@ -148,6 +148,11 @@
     color: #1D355D;
     text-align: center;
 }
+.btnTryAgainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .btnTryAgain{
     border: 2px solid #1D355D;
     background: #FFFFFF;
