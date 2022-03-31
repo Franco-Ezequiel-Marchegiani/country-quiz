@@ -41,8 +41,6 @@ function Question() {
 
   return (
     <main className='containerAll'>
-      {/* <h1 className='titleApp'>Country Quiz</h1> */}
-        <section className='questionContainer'>
               {numberQuestion < 10 ?
                     <main>
                         <img className='logoWorld' src={LogoWorld} alt="" />
@@ -54,10 +52,6 @@ function Question() {
                   : 
                   <ResultView contadorPuntaje={contadorPuntaje} setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje}/>
               }
-        </section>
-      <footer>
-        <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
-      </footer>
 
     </main>
   );

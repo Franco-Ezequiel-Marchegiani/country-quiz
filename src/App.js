@@ -6,7 +6,11 @@ function App() {
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
-        <Question/>
+          <section className='questionContainer'>
+            <Question/>
+            <h2>Bienvenido! Cual Quiz deseas realizar?</h2>
+            
+          </section>
       <footer>
         <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
       </footer>
