@@ -10,7 +10,7 @@ function App() {
             <Question/>
             <h2>Bienvenido! Cual Quiz deseas realizar?</h2>
             <button>Quiz de Capitales</button>
-
+            <button>Quiz de Banderas</button>
           </section>
       <footer>
         <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
