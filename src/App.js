@@ -8,7 +8,7 @@ function App() {
       <h1 className='titleApp'>Country Quiz</h1>
           <section className='questionContainer'>
             <h2>Bienvenido! Cual Quiz deseas realizar?</h2>
-            <Link to="#"><button>Quiz de Capitales</button></Link>
+            <Link to="/countriesQuiz"><button>Quiz de Capitales</button></Link>
             <Link to="/flagQuiz"><button>Quiz de Banderas</button></Link>
           </section>
       <footer>
