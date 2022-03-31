@@ -9,6 +9,16 @@
     line-height: 54px;
     text-transform: uppercase;
 }
+.homeContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.welcomeTitle{
+    text-align: center;
+    font-size: 32px;
+}
 footer{
     width: 100vw;
     position: absolute;
