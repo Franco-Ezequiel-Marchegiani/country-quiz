@@ -168,6 +168,9 @@
     padding: 18px 40px;
     cursor: pointer;
 }
+.btnGoBackHome{
+    margin-top: 20px;
+}
 @media only screen and (min-width: 600px){
     .questionContainer{
         width: 464px;

@@ -15,9 +15,9 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje}) {
             {contadorPuntaje === 10 ? <p className='paragraphPerfectScore'>puntaje perfecto :)</p> : "" }
         </div>
         <div className='btnTryAgainContainer'>
-          
+
         <button className='btnTryAgain' onClick={restartBtnFunction}>Intentar nuevamente</button>
-         <button className='btnTryAgain' onClick={restartBtnFunction}>Regresar al inicio</button>
+         <button className='btnTryAgain btnGoBackHome' onClick={restartBtnFunction}>Regresar al inicio</button>
         </div>
     </main> 
   );
