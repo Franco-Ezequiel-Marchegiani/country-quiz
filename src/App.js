@@ -9,7 +9,7 @@ function App() {
           <section className='questionContainer'>
             <Question/>
             <h2>Bienvenido! Cual Quiz deseas realizar?</h2>
-            <button>Quiz de Capitales</button>
+            <Link to="#"><button>Quiz de Capitales</button></Link>
             <Link to="#"><button>Quiz de Banderas</button></Link>
           </section>
       <footer>
