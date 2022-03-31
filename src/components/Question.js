@@ -45,6 +45,7 @@ function Question() {
                       <img className='logoWorld' src={LogoWorld} alt="" />
                       <img className='imageFlag' src={urlImage} alt="" />
                       <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
+                      {/* Acá se pasa todo lo necesario para utilizar el componente ButtonComponent */}
                         <ButtonComponent contadorPuntaje={contadorPuntaje} flagQuestions={flagQuestions} numberQuestion={numberQuestion}setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje} bothClassesBtn1={bothClassesBtn1} bothClassesBtn2={bothClassesBtn2} bothClassesBtn3={bothClassesBtn3} bothClassesBtn4={bothClassesBtn4} answerSelected={answerSelected} setAnswerSelected={setAnswerSelected} wrongAnswerSelected={wrongAnswerSelected} setWrongAnswerSelected={setWrongAnswerSelected} />
                 </main> 
                 : 
