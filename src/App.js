@@ -9,7 +9,8 @@ function App() {
           <section className='questionContainer'>
             <Question/>
             <h2>Bienvenido! Cual Quiz deseas realizar?</h2>
-            
+            <button>Quiz de Capitales</button>
+
           </section>
       <footer>
         <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
