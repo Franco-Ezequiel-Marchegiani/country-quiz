@@ -7,7 +7,6 @@ function App() {
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
           <section className='questionContainer'>
-            <QuestionFlag/>
             <h2>Bienvenido! Cual Quiz deseas realizar?</h2>
             <Link to="#"><button>Quiz de Capitales</button></Link>
             <Link to="#"><button>Quiz de Banderas</button></Link>
