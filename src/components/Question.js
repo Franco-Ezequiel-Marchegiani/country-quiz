@@ -210,66 +210,73 @@ function Question() {
   -Dividir por componentes, es muy importante, la vista de resultado puede estar tranquilamente en un componente nuevo y ser reutilizable,
   y a su vez, llevar toda su lógica en ese componente
   -Corregir Bug que hace que se vean así los textos*/
+  let arrayBtn = [
+    {
+      id:1,
+      btnNumber: 0,
+      setOnHoverBtn: setOnHoverBtn1,
+      onClickBtn: onClickBtn1,
+      className: bothClassesBtn1,
+      classNameIcon: "classNameIcon1",
+    },
+    {
+      id:2,
+      btnNumber: 1,
+      setOnHoverBtn: setOnHoverBtn2,
+      onClickBtn: onClickBtn2,
+      className: bothClassesBtn2,
+      classNameIcon: "classNameIcon2",
+    },
+    {
+      id:3,
+      btnNumber: 2,
+      setOnHoverBtn: setOnHoverBtn3,
+      onClickBtn: onClickBtn3,
+      className: bothClassesBtn3,
+      classNameIcon: "classNameIcon3",
+    },
+    {
+      id:4,
+      btnNumber: 3,
+      setOnHoverBtn: setOnHoverBtn4,
+      onClickBtn: onClickBtn4,
+      className: bothClassesBtn4,
+      classNameIcon: "classNameIcon4",
+    },
+  ]
+
   return (
       <section className='questionContainer'>
-        {numberQuestion < 10 ?
-              <main>
-                  <img className='logoWorld' src={LogoWorld} alt="" />
-                  <img className='imageFlag' src={urlImage} alt="" />
-                  <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
-                  <div className='btnContainer'>
-                        <button
-                        disabled={answerSelected !== ""}
-                        className={bothClassesBtn1} onMouseOver={()=> setOnHoverBtn1(true)} onMouseOut={()=> setOnHoverBtn1(false)} onClick={onClickBtn1}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[0].answerText}</span></button>
-                        {answerSelected !== "" ?
-                        flagQuestions[numberQuestion].answerOptiones[0].isCorrect === false ?
-                        <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
-                        : flagQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? 
-                        <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
-                        : ""
-                        : ""
-                        }
-                  </div>
-                  <div className='btnContainer'>
-                        <button disabled={answerSelected !== ""} className={bothClassesBtn2} onMouseOver={()=> setOnHoverBtn2(true)} onMouseOut={()=> setOnHoverBtn2(false)} onClick={onClickBtn2}><span className='letterOfOptionAnswer'>B</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[1].answerText}</span></button>
-                        {answerSelected !== "" ?
-                        flagQuestions[numberQuestion].answerOptiones[1].isCorrect === false ?
-                        <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
-                        : flagQuestions[numberQuestion].answerOptiones[1].isCorrect === true ? 
-                        <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
-                        : ""
-                        : ""
-                        }
-                  </div>
-                  <div className='btnContainer'>
-                        <button disabled={answerSelected !== ""} className={bothClassesBtn3} onMouseOver={()=> setOnHoverBtn3(true)} onMouseOut={()=> setOnHoverBtn3(false)} onClick={onClickBtn3}><span className='letterOfOptionAnswer'>C</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[2].answerText}</span></button>
-                        {answerSelected !== "" ?
-                        flagQuestions[numberQuestion].answerOptiones[2].isCorrect === false ?
-                        <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
-                        : flagQuestions[numberQuestion].answerOptiones[2].isCorrect === true ? 
-                        <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
-                        : ""
-                        : ""
-                        }
-                  </div>
-                  <div className='btnContainer'>
-                        <button disabled={answerSelected !== ""} className={bothClassesBtn4} onMouseOver={()=> setOnHoverBtn4(true)} onMouseOut={()=> setOnHoverBtn4(false)} onClick={onClickBtn4}><span className='letterOfOptionAnswer'>D</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[3].answerText}</span></button>
-                        {answerSelected !== "" ?
-                        flagQuestions[numberQuestion].answerOptiones[3].isCorrect === false ?
-                        <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
-                        : flagQuestions[numberQuestion].answerOptiones[3].isCorrect === true ? 
-                        <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
-                        : ""
-                        : ""
-                        }
-                  </div>
-                  <div className='btnNextContainer'>
-                    <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={nextBtnOnClick}>
-                            Next
-                    </button>
-                  </div>
-            </main> : 
-            <ResultView contadorPuntaje={contadorPuntaje} setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje}/>
+            {numberQuestion < 10 ?
+                  <main>
+                      <img className='logoWorld' src={LogoWorld} alt="" />
+                      <img className='imageFlag' src={urlImage} alt="" />
+                      <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
+                      <div className='btnContainer'>
+                        {arrayBtn.map((singleBtn) =>{
+                          return <div className='btnAndIconContainer'> 
+                                    <button disabled={answerSelected !== ""} className={singleBtn.className} onMouseOver={()=> singleBtn.setOnHoverBtn(true)} onMouseOut={()=> singleBtn.setOnHoverBtn(false)} onClick={singleBtn.onClickBtn}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[singleBtn.btnNumber].answerText}</span></button>
+                                      {
+                                        answerSelected !== "" ?
+                                        flagQuestions[numberQuestion].answerOptiones[singleBtn.btnNumber].isCorrect === false ?
+                                        <FontAwesomeIcon className='wrongIcon' icon={solid('circle-xmark')} /> 
+                                        : flagQuestions[numberQuestion].answerOptiones[singleBtn.btnNumber].isCorrect === true ? 
+                                        <FontAwesomeIcon className='correctIcon' icon={solid('circle-check')} /> 
+                                        : ""
+                                        : "" 
+                                      }
+                                  </div>
+                        })}
+                      </div>
+                      
+                      <div className='btnNextContainer'>
+                        <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={nextBtnOnClick}>
+                                Next
+                        </button>
+                      </div>
+                </main> 
+                : 
+                <ResultView contadorPuntaje={contadorPuntaje} setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje}/>
             }
       </section>
   );

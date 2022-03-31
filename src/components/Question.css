@@ -59,6 +59,11 @@
     display: flex;
     justify-content: flex-end;
 }
+.btnAndIconContainer{
+    padding: 0;
+    margin: 0;
+    height: 80px;
+}
 .btnNext{
     margin: 0;
     width: 116px;
@@ -88,16 +93,16 @@
     color: #FFFFFF;
 }
 .wrongIcon{
-    position: absolute;
-    right: 18px;
-    top: 18px;
+    position: relative;
+    left: 92%;
+    top: -64px;
     font-size: 20px;
     color: #f2f2f2;
 }
 .correctIcon{
-    position: absolute;
-    right: 18px;
-    top: 18px;
+    position: relative;
+    left: 92%;
+    top: -64px;
     font-size: 20px;
     color: #f2f2f2;
 }
