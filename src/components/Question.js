@@ -5,6 +5,7 @@ import './Question.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 import { Button } from 'react-bootstrap';
+import ResultView from './ResultView';
 function Question() {
 
   let [numberQuestion, setNumberQuestion] = useState(0)
@@ -269,6 +270,7 @@ function Question() {
                   </div>
             </main> : 
             <main className='resultContainer'>
+              <ResultView contadorPuntaje={contadorPuntaje} setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje}/>
                 <img className='imageResult' src={LogoEnd} alt="" />
                   <div>
                       <h1 className='titleResult'>Resultado</h1>
