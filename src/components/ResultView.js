@@ -1,5 +1,5 @@
 import './Question.css';
-
+import LogoEnd from '../images/iconWin.svg';
 /* Queda pasar todo lo que requiere para su funcionamiento */
 function ResultView() {
   return (

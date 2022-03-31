@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import LogoWorld from '../images/logoWorld.svg';
-import LogoEnd from '../images/iconWin.svg'
+import LogoEnd from '../images/iconWin.svg';
 import './Question.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
