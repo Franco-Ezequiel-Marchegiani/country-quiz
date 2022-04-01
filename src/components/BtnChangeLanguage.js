@@ -6,10 +6,10 @@ import English from '../images/englishFlag.png';
 import { useState } from 'react';
 /* Queda pasar todo lo que requiere para su funcionamiento */
 function BtnChangeLanguage() {
-    let[ language, setLanguage] = useState("spanish")
+    let[ language, setLanguage] = useState(true)
   return (
-    <button>
-        <img src={language === "spanish" ? Spanish : English} alt="" />
+    <button onClick={()=> setLanguage(!language)}>
+        <img src={language === true ? Spanish : English} alt="" />
         
         </button>
   );
