@@ -7,9 +7,10 @@ import { useState } from 'react';
 /* Queda pasar todo lo que requiere para su funcionamiento */
 function BtnChangeLanguage() {
     let[ language, setLanguage] = useState(true)
+    console.log(language);
   return (
-    <button onClick={()=> setLanguage(!language)}>
-        <img src={language === true ? Spanish : English} alt="" />
+    <button className='btnChangeLanguage' onClick={()=> setLanguage(!language)}>
+        <img className='imageFlagLanguage' src={language === true ? Spanish : English} alt="Change Language" />
         
         </button>
   );

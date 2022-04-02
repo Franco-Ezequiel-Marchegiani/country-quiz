@@ -8,14 +8,16 @@ import BtnChangeLanguage from './components/BtnChangeLanguage';
 function App() {
   let [onHoverBtnHome1, setOnHoverBtnHome1] = useState(false);
   let [onHoverBtnHome2, setOnHoverBtnHome2] = useState(false);
-  let btnClass1 = !onHoverBtnHome1 ? "btnAnswer" : "btnAnswer hoverSelect"
-  let btnClass2 = !onHoverBtnHome2 ? "btnAnswer" : "btnAnswer hoverSelect"
+  let btnClass1 = !onHoverBtnHome1 ? "btnAnswer" : "btnAnswer hoverSelect";
+  let btnClass2 = !onHoverBtnHome2 ? "btnAnswer" : "btnAnswer hoverSelect";
+  let[ language, setLanguage] = useState(true)
+    console.log(language);
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
       
             <section className='questionContainer homeContainer'>
-                      <BtnChangeLanguage/>
+                      <BtnChangeLanguage language={language} setLanguage={setLanguage} />
                       <img className='logoWorld' src={LogoWorld} alt="" />
                       <h2 className='welcomeTitle'>Bienvenido! Cual Quiz deseas realizar?</h2>
                       <div>

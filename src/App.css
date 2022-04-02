@@ -19,6 +19,20 @@
     text-align: center;
     font-size: 32px;
 }
+.btnChangeLanguage{
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+    right: 60px;
+}
+.imageFlagLanguage{
+    width: 100%;
+    height: 100%;
+}
 footer{
     width: 100vw;
     position: absolute;

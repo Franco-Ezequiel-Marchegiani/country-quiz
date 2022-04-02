@@ -5,6 +5,7 @@ import ResultView from './ResultView';
 import ButtonComponent from './ButtonComponent';
 import flagQuestions from './ArrayQuestionsFlags'
 import { Link } from 'react-router-dom';
+import BtnChangeLanguage from './BtnChangeLanguage';
 function QuestionFlag() {
   
   let [numberQuestion, setNumberQuestion] = useState(0)
@@ -15,6 +16,7 @@ function QuestionFlag() {
   let [onHoverBtn4, setOnHoverBtn4] = useState(false);
   let [contadorPuntaje, setContadorPuntaje] = useState(0);
   let [wrongAnswerSelected, setWrongAnswerSelected ] = useState(false);
+  let[ language, setLanguage] = useState(true)
 
   /* Las variables son para ahorrar código en el return para añadir y quitar las clases para los estilos de hover */
   let btnClassNumber1Btn1 = !onHoverBtn1 ? "btnAnswer" : "btnAnswer hoverSelect"
@@ -43,6 +45,7 @@ function QuestionFlag() {
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
           <section className='questionContainer'>
+          <BtnChangeLanguage language={language} setLanguage={setLanguage} />
             {numberQuestion < 10 ?
                     <main>
                         <img className='logoWorld' src={LogoWorld} alt="" />
