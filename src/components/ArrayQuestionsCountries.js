@@ -65,7 +65,7 @@ let countriesQuestions = [
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: false},
+        { answerText: "Malaui", isCorrect: false},
         { answerText: "Madagascar", isCorrect: true},
       ]
     },
