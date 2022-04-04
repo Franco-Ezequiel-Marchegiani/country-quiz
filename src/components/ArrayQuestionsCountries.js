@@ -33,7 +33,7 @@ let countriesQuestions = [
       questionText: "Eslovaquia, a qué país pertenece?",
       questionTextEnglish: "Eslovaquia is the capital of",
       answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
+        { answerText: "Tallinn", isCorrect: false},
         { answerText: "Quito", isCorrect: false},
         { answerText: "Liubliana", isCorrect: false},
         { answerText: "Bratislava", isCorrect: true},
