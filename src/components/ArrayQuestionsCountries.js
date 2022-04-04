@@ -46,16 +46,16 @@ let countriesQuestions = [
         { answerText: "Corea del Norte", isCorrect: true},
         { answerText: "Corea del Sur", isCorrect: false},
         { answerText: "Japón", isCorrect: false  },
-        { answerText: "Pekín", isCorrect: false},
+        { answerText: "China", isCorrect: false},
       ]
     },
     {
-      questionText: "¿Sudáfrica, a qué país pertenece?",
-      questionTextEnglish: "Aires is the capital of",
+      questionText: "Pekín, a qué país pertenece?",
+      questionTextEnglish: "Pekín is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
+        { answerText: "China", isCorrect: true},
         { answerText: "Violeta", isCorrect: false},
       ]
     },
