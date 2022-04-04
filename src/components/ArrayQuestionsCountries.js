@@ -20,12 +20,12 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "¿Cual es la capital de Buenos Aires?",
+      questionText: "¿Cual es la capital de Sudáfrica?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
+        { answerText: "Pretoria", isCorrect: true},
+        { answerText: "Blanco", isCorrect: false},
         { answerText: "Violeta", isCorrect: false},
       ]
     },
