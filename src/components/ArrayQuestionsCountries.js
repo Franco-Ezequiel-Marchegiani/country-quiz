@@ -13,7 +13,7 @@ let countriesQuestions = [
       questionText: "¿Cual es la capital de Afganistan?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
+        { answerText: "Yamena", isCorrect: false},
         { answerText: "Doha", isCorrect: false},
         { answerText: "Timbu", isCorrect: false},
         { answerText: "Kabul", isCorrect: true},
