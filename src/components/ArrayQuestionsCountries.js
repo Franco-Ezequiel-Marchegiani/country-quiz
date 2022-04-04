@@ -1,6 +1,6 @@
 let countriesQuestions = [
     {
-      questionText: "¿Cual es la capital de Buenos Aires?",
+      questionText: "¿Buenos Aires, a qué pais pertenece?",
       questionTextEnglish: "Buenos Aires is the capital of",
       answerOptiones: [
         { answerText: "Sudán", isCorrect: false},
@@ -10,7 +10,7 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "¿Cual es la capital de Kabul?",
+      questionText: "¿Kabul, a qué país pertenece?",
       questionTextEnglish: "Kabul is the capital of",
       answerOptiones: [
         { answerText: "Uganda", isCorrect: false},
@@ -20,17 +20,27 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "¿Cual es la capital de Sudáfrica?",
-      questionTextEnglish: "Aires is the capital of",
+      questionText: "Pretoria, a qué país pertenece?",
+      questionTextEnglish: "Pretoria is the capital of",
+      answerOptiones: [
+        { answerText: "Italia", isCorrect: false},
+        { answerText: "Sudáfrica", isCorrect: true},
+        { answerText: "Surinam", isCorrect: false},
+        { answerText: "Sudán", isCorrect: false},
+      ]
+    },
+    {
+      questionText: "Eslovaquia, a qué país pertenece?",
+      questionTextEnglish: "Eslovaquia is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
-        { answerText: "Pretoria", isCorrect: true},
+        { answerText: "Verde", isCorrect: false},
         { answerText: "Blanco", isCorrect: false},
-        { answerText: "Violeta", isCorrect: false},
+        { answerText: "Bratislava", isCorrect: true},
       ]
     },
     {
-      questionText: "¿Cual es la capital de Buenos Aires?",
+      questionText: "¿Sudáfrica, a qué país pertenece?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -40,7 +50,7 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "¿Cual es la capital de Buenos Aires?",
+      questionText: "¿Sudáfrica, a qué país pertenece?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -50,7 +60,7 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "¿Cual es la capital de Buenos Aires?",
+      questionText: "¿Sudáfrica, a qué país pertenece?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -60,7 +70,7 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "¿Cual es la capital de Buenos Aires?",
+      questionText: "¿Sudáfrica, a qué país pertenece?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -70,7 +80,7 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "¿Cual es la capital de Buenos Aires?",
+      questionText: "¿Sudáfrica, a qué país pertenece?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
@@ -80,17 +90,7 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "¿Cual es la capital de Buenos Aires?",
-      questionTextEnglish: "Aires is the capital of",
-      answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
-      ]
-    },
-    {
-      questionText: "¿Cual es la capital de Buenos Aires?",
+      questionText: "¿Sudáfrica, a qué país pertenece?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
