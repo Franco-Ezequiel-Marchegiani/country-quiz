@@ -30,22 +30,22 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "Eslovaquia, a qué país pertenece?",
-      questionTextEnglish: "Eslovaquia is the capital of",
+      questionText: "Bratislava, a qué país pertenece?",
+      questionTextEnglish: "Bratislava is the capital of",
       answerOptiones: [
-        { answerText: "Tallinn", isCorrect: false},
-        { answerText: "Quito", isCorrect: false},
-        { answerText: "Liubliana", isCorrect: false},
-        { answerText: "Bratislava", isCorrect: true},
+        { answerText: "Estonia", isCorrect: false},
+        { answerText: "Ecuador", isCorrect: false},
+        { answerText: "Eslovenia", isCorrect: false},
+        { answerText: "Eslovaquia", isCorrect: true},
       ]
     },
     {
-      questionText: "¿Sudáfrica, a qué país pertenece?",
-      questionTextEnglish: "Aires is the capital of",
+      questionText: "Pionyang, a qué país pertenece?",
+      questionTextEnglish: "Pionyang is the capital of",
       answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
-        { answerText: "Blanco", isCorrect: true},
+        { answerText: "Corea del Norte", isCorrect: true},
+        { answerText: "Corea del Sur", isCorrect: false},
+        { answerText: "Blanco", isCorrect: false  },
         { answerText: "Violeta", isCorrect: false},
       ]
     },
