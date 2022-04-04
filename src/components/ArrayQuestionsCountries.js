@@ -4,7 +4,7 @@ let countriesQuestions = [
       questionTextEnglish: "Buenos Aires is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
+        { answerText: "Italia", isCorrect: false},
         { answerText: "Argentina", isCorrect: true},
         { answerText: "Violeta", isCorrect: false},
       ]
