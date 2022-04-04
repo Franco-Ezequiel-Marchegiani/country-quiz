@@ -45,7 +45,7 @@ let countriesQuestions = [
       answerOptiones: [
         { answerText: "Corea del Norte", isCorrect: true},
         { answerText: "Corea del Sur", isCorrect: false},
-        { answerText: "Blanco", isCorrect: false  },
+        { answerText: "Japón", isCorrect: false  },
         { answerText: "Violeta", isCorrect: false},
       ]
     },
