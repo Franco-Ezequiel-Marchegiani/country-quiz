@@ -34,7 +34,7 @@ let countriesQuestions = [
       questionTextEnglish: "Eslovaquia is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
+        { answerText: "Quito", isCorrect: false},
         { answerText: "Liubliana", isCorrect: false},
         { answerText: "Bratislava", isCorrect: true},
       ]
