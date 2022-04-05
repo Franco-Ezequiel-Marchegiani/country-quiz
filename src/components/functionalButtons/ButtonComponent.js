@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Question.css';
+import '../Question.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 function ButtonComponent({contadorPuntaje, flagQuestions, setContadorPuntaje, numberQuestion, setNumberQuestion,  bothClassesBtn1, bothClassesBtn2, bothClassesBtn3, bothClassesBtn4,answerSelected, setAnswerSelected, wrongAnswerSelected, setWrongAnswerSelected}) {

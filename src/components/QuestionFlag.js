@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import LogoWorld from '../images/logoWorld.svg';
 import './Question.css';
 import ResultView from './ResultView';
-import ButtonComponent from './ButtonComponent';
-import flagQuestions from './ArrayQuestionsFlags'
+import ButtonComponent from './functionalButtons/ButtonComponent';
+import flagQuestions from './arrays/ArrayQuestionsFlags'
 import { Link } from 'react-router-dom';
-import BtnChangeLanguage from './BtnChangeLanguage';
+import BtnChangeLanguage from './functionalButtons/BtnChangeLanguage';
 function QuestionFlag() {
   
   let [numberQuestion, setNumberQuestion] = useState(0)

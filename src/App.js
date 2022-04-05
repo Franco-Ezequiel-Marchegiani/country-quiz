@@ -3,7 +3,7 @@ import QuestionFlag from './components/QuestionFlag';
 import LogoWorld from './images/logoWorld.svg';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import BtnChangeLanguage from './components/BtnChangeLanguage';
+import BtnChangeLanguage from './components/functionalButtons/BtnChangeLanguage';
 
 function App() {
   let [onHoverBtnHome1, setOnHoverBtnHome1] = useState(false);
