@@ -4,20 +4,22 @@ import LogoWorld from '../images/logoWorld.svg';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import BtnChangeLanguage from './functionalButtons/BtnChangeLanguage';
-
-function Home() {
+import useLanguage from '../hooks/UseLanguage'
+function Home({language, setLanguage}) {
+    /* const language = useLanguage();
+    console.log(language); */
   let [onHoverBtnHome1, setOnHoverBtnHome1] = useState(false);
   let [onHoverBtnHome2, setOnHoverBtnHome2] = useState(false);
   let btnClass1 = !onHoverBtnHome1 ? "btnAnswer" : "btnAnswer hoverSelect";
   let btnClass2 = !onHoverBtnHome2 ? "btnAnswer" : "btnAnswer hoverSelect";
-  let[ language, setLanguage] = useState(true)
     console.log(language);
+    console.log(setLanguage);
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
       
             <section className='questionContainer homeContainer'>
-                      <BtnChangeLanguage language={language} setLanguage={setLanguage} />
+                      <BtnChangeLanguage /* language={language}  setLanguage={setLanguage} */ />
                       <img className='logoWorld' src={LogoWorld} alt="" />
                       <h2 className='welcomeTitle'>Bienvenido! Cual Quiz deseas realizar?</h2>
                       <div>
