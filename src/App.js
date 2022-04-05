@@ -14,7 +14,7 @@ function App() {
                   <Routes >
                     <Route path="/" element={<Home language={language} setLanguage={setLanguage}/>} />
                     <Route path="/flagQuiz" element={<QuestionFlag language={language} setLanguage={setLanguage}/>} />
-                    <Route path="/countriesQuiz" element={<QuestionCountry/>} />
+                    <Route path="/countriesQuiz" element={<QuestionCountry language={language} setLanguage={setLanguage}/>} />
                   </Routes>
     </BrowserRouter>
     </>
