@@ -12,14 +12,12 @@ function Home({language, setLanguage}) {
   let [onHoverBtnHome2, setOnHoverBtnHome2] = useState(false);
   let btnClass1 = !onHoverBtnHome1 ? "btnAnswer" : "btnAnswer hoverSelect";
   let btnClass2 = !onHoverBtnHome2 ? "btnAnswer" : "btnAnswer hoverSelect";
-    console.log(language);
-    console.log(setLanguage);
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
       
             <section className='questionContainer homeContainer'>
-                      <BtnChangeLanguage /* language={language}  setLanguage={setLanguage} */ />
+                      <BtnChangeLanguage language={language}  setLanguage={setLanguage} />
                       <img className='logoWorld' src={LogoWorld} alt="" />
                       <h2 className='welcomeTitle'>Bienvenido! Cual Quiz deseas realizar?</h2>
                       <div>

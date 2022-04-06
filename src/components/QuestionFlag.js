@@ -45,9 +45,9 @@ function QuestionFlag() {
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
           <section className='questionContainer'>
-          <BtnChangeLanguage language={language} setLanguage={setLanguage} />
             {numberQuestion < 10 ?
                     <main>
+                      <BtnChangeLanguage language={language} setLanguage={setLanguage} />
                         <img className='logoWorld' src={LogoWorld} alt="" />
                         <img className='imageFlag' src={urlImage} alt="" />
                         <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>

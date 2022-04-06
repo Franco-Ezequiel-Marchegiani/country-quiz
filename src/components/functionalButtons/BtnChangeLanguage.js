@@ -6,10 +6,9 @@ import English from '../../images/englishFlag.png';
 import { useState } from 'react';
 import useLanguage from '../../hooks/UseLanguage'
 /* Queda pasar todo lo que requiere para su funcionamiento */
-function BtnChangeLanguage() {
-  let language = true
+function BtnChangeLanguage({language, setLanguage}) {
   return (
-    <button className='btnChangeLanguage' onClick={()=> console.log("Hola") }>
+    <button className='btnChangeLanguage' onClick={()=> setLanguage(!language) }>
         <img className='imageFlagLanguage' src={language === true ? Spanish : English} alt="Change Language" />
         
         </button>
