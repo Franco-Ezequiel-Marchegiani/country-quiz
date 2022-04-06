@@ -76,7 +76,7 @@ let countriesQuestions = [
         { answerText: "España", isCorrect: false},
         { answerText: "Finlandia", isCorrect: false},
         { answerText: "Suiza", isCorrect: true},
-        { answerText: "Violeta", isCorrect: false},
+        { answerText: "Suecia", isCorrect: false},
       ]
     },
     {
