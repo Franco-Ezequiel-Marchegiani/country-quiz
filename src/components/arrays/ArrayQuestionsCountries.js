@@ -83,7 +83,7 @@ let countriesQuestions = [
       questionText: "Lima, a qué país pertenece?",
       questionTextEnglish: "Lima is the capital of",
       answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
+        { answerText: "Costa Rica", isCorrect: false},
         { answerText: "Verde", isCorrect: false},
         { answerText: "Portugal", isCorrect: false},
         { answerText: "Perú", isCorrect: true},
