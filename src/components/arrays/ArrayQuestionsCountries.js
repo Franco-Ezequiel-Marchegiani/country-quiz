@@ -93,7 +93,7 @@ let countriesQuestions = [
       questionText: "¿Sudáfrica, a qué país pertenece?",
       questionTextEnglish: "Aires is the capital of",
       answerOptiones: [
-        { answerText: "Azul", isCorrect: false},
+        { answerText: "Azul", isCorrect: true},
         { answerText: "Verde", isCorrect: false},
         { answerText: "Blanco", isCorrect: true},
         { answerText: "Violeta", isCorrect: false},
