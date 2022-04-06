@@ -74,7 +74,7 @@ let countriesQuestions = [
       questionTextEnglish: "Berna is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: false},
-        { answerText: "Verde", isCorrect: false},
+        { answerText: "Finlandia", isCorrect: false},
         { answerText: "Suiza", isCorrect: true},
         { answerText: "Violeta", isCorrect: false},
       ]
