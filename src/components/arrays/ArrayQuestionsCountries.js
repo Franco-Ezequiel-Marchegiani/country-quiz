@@ -90,8 +90,8 @@ let countriesQuestions = [
       ]
     },
     {
-      questionText: "¿Sudáfrica, a qué país pertenece?",
-      questionTextEnglish: "Aires is the capital of",
+      questionText: "Quito, a qué país pertenece?",
+      questionTextEnglish: " is the capital of",
       answerOptiones: [
         { answerText: "Azul", isCorrect: true},
         { answerText: "Verde", isCorrect: false},
