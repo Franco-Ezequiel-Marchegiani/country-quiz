@@ -40,6 +40,8 @@ function QuestionFlag({language, setLanguage}) {
   let flagCode = flagQuestions[numberQuestion].flagCode;
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
 
+  let textSpanish = flagQuestions[numberQuestion].questionText;
+  let textEnglish = flagQuestions[numberQuestion].questionTextEnglish;
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
@@ -49,9 +51,9 @@ function QuestionFlag({language, setLanguage}) {
                       <BtnChangeLanguage language={language} setLanguage={setLanguage} />
                         <img className='logoWorld' src={LogoWorld} alt="" />
                         <img className='imageFlag' src={urlImage} alt="" />
-                        <h2 className='questionText'>{flagQuestions[numberQuestion].questionText}</h2>
+                        <h2 className='questionText'>{language === true ? textSpanish : textEnglish}</h2>
                         {/* Acá se pasa todo lo necesario para utilizar el componente ButtonComponent */}
-                          <ButtonComponent contadorPuntaje={contadorPuntaje} flagQuestions={flagQuestions} numberQuestion={numberQuestion}setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje} bothClassesBtn1={bothClassesBtn1} bothClassesBtn2={bothClassesBtn2} bothClassesBtn3={bothClassesBtn3} bothClassesBtn4={bothClassesBtn4} answerSelected={answerSelected} setAnswerSelected={setAnswerSelected} wrongAnswerSelected={wrongAnswerSelected} setWrongAnswerSelected={setWrongAnswerSelected} />
+                          <ButtonComponent contadorPuntaje={contadorPuntaje} flagQuestions={flagQuestions} numberQuestion={numberQuestion}setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje} bothClassesBtn1={bothClassesBtn1} bothClassesBtn2={bothClassesBtn2} bothClassesBtn3={bothClassesBtn3} bothClassesBtn4={bothClassesBtn4} answerSelected={answerSelected} setAnswerSelected={setAnswerSelected} wrongAnswerSelected={wrongAnswerSelected} setWrongAnswerSelected={setWrongAnswerSelected} language={language} setLanguage={setLanguage} />
                   </main> 
                   : 
                   <ResultView contadorPuntaje={contadorPuntaje} setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje}/>

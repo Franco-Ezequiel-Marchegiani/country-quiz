@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import './Question.css';
 import countriesQuestions from './arrays/ArrayQuestionsCountries';
 import UseLanguage from '../hooks/UseLanguage';
-function QuestionCountry() {
+function QuestionCountry({language, setLanguage}) {
   
   /* useEffect(()=>{
     getLanguage();
