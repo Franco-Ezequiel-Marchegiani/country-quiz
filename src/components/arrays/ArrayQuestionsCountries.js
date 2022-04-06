@@ -96,7 +96,7 @@ let countriesQuestions = [
         { answerText: "Ecuador", isCorrect: true},
         { answerText: "Egipto", isCorrect: false},
         { answerText: "Samoa", isCorrect: false},
-        { answerText: "Violeta", isCorrect: false},
+        { answerText: "Camboya", isCorrect: false},
       ]
     },
     {}
