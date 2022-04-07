@@ -44,7 +44,7 @@ let countriesQuestions = [
       questionTextEnglish: "Pionyang is the capital of",
       answerOptiones: [
         { answerText: "Corea del Norte", answerTextEnglish: "North Korea", isCorrect: true},
-        { answerText: "Corea del Sur", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Corea del Sur", answerTextEnglish: "South Korea", isCorrect: false},
         { answerText: "Japón", answerTextEnglish: "New Zealand", isCorrect: false  },
         { answerText: "China", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
