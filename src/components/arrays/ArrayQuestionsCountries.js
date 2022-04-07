@@ -54,7 +54,7 @@ let countriesQuestions = [
       questionTextEnglish: "Pekín is the capital of",
       answerOptiones: [
         { answerText: "Lesoto", answerTextEnglish: "Lesotho", isCorrect: false},
-        { answerText: "Colombia", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Colombia", answerTextEnglish: "Colombia", isCorrect: false},
         { answerText: "China", answerTextEnglish: "New Zealand", isCorrect: true},
         { answerText: "Luxemburgo", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
