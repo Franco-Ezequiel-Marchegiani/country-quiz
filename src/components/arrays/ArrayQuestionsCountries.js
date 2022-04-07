@@ -43,7 +43,7 @@ let countriesQuestions = [
       questionText: "Pionyang, a qué país pertenece?",
       questionTextEnglish: "Pionyang is the capital of",
       answerOptiones: [
-        { answerText: "Corea del Norte", answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Corea del Norte", answerTextEnglish: "North Korea", isCorrect: true},
         { answerText: "Corea del Sur", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Japón", answerTextEnglish: "New Zealand", isCorrect: false  },
         { answerText: "China", answerTextEnglish: "New Zealand", isCorrect: false},
