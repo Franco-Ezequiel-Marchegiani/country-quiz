@@ -3,7 +3,7 @@ let countriesQuestions = [
       questionText: "¿Buenos Aires, a qué pais pertenece?",
       questionTextEnglish: "Buenos Aires is the capital of",
       answerOptiones: [
-        { answerText: "Sudán",answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Sudán",answerTextEnglish: "Sudan", isCorrect: false},
         { answerText: "Italia",answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Argentina",answerTextEnglish: "New Zealand", isCorrect: true},
         { answerText: "Uruguay", answerTextEnglish: "New Zealand", isCorrect: false},
