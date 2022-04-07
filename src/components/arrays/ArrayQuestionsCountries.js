@@ -4,99 +4,99 @@ let countriesQuestions = [
       questionTextEnglish: "Buenos Aires is the capital of",
       answerOptiones: [
         { answerText: "Sudán",answerTextEnglish: "New Zealand", isCorrect: false},
-        { answerText: "Italia", isCorrect: false},
-        { answerText: "Argentina", isCorrect: true},
-        { answerText: "Uruguay", isCorrect: false},
+        { answerText: "Italia",answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Argentina",answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Uruguay", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
     {
       questionText: "¿Kabul, a qué país pertenece?",
       questionTextEnglish: "Kabul is the capital of",
       answerOptiones: [
-        { answerText: "Uganda", isCorrect: false},
-        { answerText: "Venezuela", isCorrect: false},
-        { answerText: "Austria", isCorrect: false},
-        { answerText: "Afganistan", isCorrect: true},
+        { answerText: "Uganda", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Venezuela", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Austria", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Afganistan", answerTextEnglish: "New Zealand", isCorrect: true},
       ]
     },
     {
       questionText: "Pretoria, a qué país pertenece?",
       questionTextEnglish: "Pretoria is the capital of",
       answerOptiones: [
-        { answerText: "Italia", isCorrect: false},
-        { answerText: "Sudáfrica", isCorrect: true},
-        { answerText: "Surinam", isCorrect: false},
-        { answerText: "Sudán", isCorrect: false},
+        { answerText: "Italia", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Sudáfrica", answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Surinam", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Sudán", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
     {
       questionText: "Bratislava, a qué país pertenece?",
       questionTextEnglish: "Bratislava is the capital of",
       answerOptiones: [
-        { answerText: "Estonia", isCorrect: false},
-        { answerText: "Ecuador", isCorrect: false},
-        { answerText: "Eslovenia", isCorrect: false},
-        { answerText: "Eslovaquia", isCorrect: true},
+        { answerText: "Estonia", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Ecuador", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Eslovenia", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Eslovaquia", answerTextEnglish: "New Zealand", isCorrect: true},
       ]
     },
     {
       questionText: "Pionyang, a qué país pertenece?",
       questionTextEnglish: "Pionyang is the capital of",
       answerOptiones: [
-        { answerText: "Corea del Norte", isCorrect: true},
-        { answerText: "Corea del Sur", isCorrect: false},
-        { answerText: "Japón", isCorrect: false  },
-        { answerText: "China", isCorrect: false},
+        { answerText: "Corea del Norte", answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Corea del Sur", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Japón", answerTextEnglish: "New Zealand", isCorrect: false  },
+        { answerText: "China", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
     {
       questionText: "Pekín, a qué país pertenece?",
       questionTextEnglish: "Pekín is the capital of",
       answerOptiones: [
-        { answerText: "Lesoto", isCorrect: false},
-        { answerText: "Colombia", isCorrect: false},
-        { answerText: "China", isCorrect: true},
-        { answerText: "Luxemburgo", isCorrect: false},
+        { answerText: "Lesoto", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Colombia", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "China", answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Luxemburgo", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
     {
       questionText: "Antananarivo, a qué país pertenece?",
       questionTextEnglish: "Antananarivo is the capital of",
       answerOptiones: [
-        { answerText: "Vanuatu", isCorrect: false},
-        { answerText: "Maldivas", isCorrect: false},
-        { answerText: "Malaui", isCorrect: false},
-        { answerText: "Madagascar", isCorrect: true},
+        { answerText: "Vanuatu", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Maldivas", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Malaui", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Madagascar", answerTextEnglish: "New Zealand", isCorrect: true},
       ]
     },
     {
       questionText: "Berna, a qué país pertenece?",
       questionTextEnglish: "Berna is the capital of",
       answerOptiones: [
-        { answerText: "España", isCorrect: false},
-        { answerText: "Finlandia", isCorrect: false},
-        { answerText: "Suiza", isCorrect: true},
-        { answerText: "Suecia", isCorrect: false},
+        { answerText: "España", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Finlandia", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Suiza", answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Suecia", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
     {
       questionText: "Lima, a qué país pertenece?",
       questionTextEnglish: "Lima is the capital of",
       answerOptiones: [
-        { answerText: "Costa Rica", isCorrect: false},
-        { answerText: "Cuba", isCorrect: false},
-        { answerText: "Portugal", isCorrect: false},
-        { answerText: "Perú", isCorrect: true},
+        { answerText: "Costa Rica", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Cuba", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Portugal", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Perú", answerTextEnglish: "New Zealand", isCorrect: true},
       ]
     },
     {
       questionText: "Quito, a qué país pertenece?",
       questionTextEnglish: "Quito is the capital of",
       answerOptiones: [
-        { answerText: "Ecuador", isCorrect: true},
-        { answerText: "Egipto", isCorrect: false},
-        { answerText: "Samoa", isCorrect: false},
-        { answerText: "Camboya", isCorrect: false},
+        { answerText: "Ecuador", answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Egipto", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Samoa", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Camboya", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
     },
     {}
