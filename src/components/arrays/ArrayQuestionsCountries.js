@@ -24,7 +24,7 @@ let countriesQuestions = [
       questionTextEnglish: "Pretoria is the capital of",
       answerOptiones: [
         { answerText: "Italia", answerTextEnglish: "Italy", isCorrect: false},
-        { answerText: "Sudáfrica", answerTextEnglish: "New Zealand", isCorrect: true},
+        { answerText: "Sudáfrica", answerTextEnglish: "South Africa", isCorrect: true},
         { answerText: "Surinam", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Sudán", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
