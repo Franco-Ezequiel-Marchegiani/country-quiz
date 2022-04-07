@@ -98,7 +98,7 @@ function ButtonComponent({contadorPuntaje, flagQuestions, setContadorPuntaje, nu
         <div className='btnContainer'>
           {arrayBtn.map((singleBtn) =>{
             return <div className='btnAndIconContainer' key={singleBtn.id}> 
-                      <button disabled={answerSelected !== ""} className={singleBtn.className} onMouseOver={()=> singleBtn.setOnHoverBtn(true)} onMouseOut={()=> singleBtn.setOnHoverBtn(false)} onClick={singleBtn.onClickBtn}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>{flagQuestions[numberQuestion].answerOptiones[singleBtn.btnNumber].answerText}</span></button>
+                      <button disabled={answerSelected !== ""} className={singleBtn.className} onMouseOver={()=> singleBtn.setOnHoverBtn(true)} onMouseOut={()=> singleBtn.setOnHoverBtn(false)} onClick={singleBtn.onClickBtn}><span className='letterOfOptionAnswer'>A</span> <span className='textAnswer'>{language === true ? flagQuestions[numberQuestion].answerOptiones[singleBtn.btnNumber].answerText : flagQuestions[numberQuestion].answerOptiones[singleBtn.btnNumber].answerTextEnglish}</span></button>
                         {
                           answerSelected !== "" ?
                           flagQuestions[numberQuestion].answerOptiones[singleBtn.btnNumber].isCorrect === false ?
