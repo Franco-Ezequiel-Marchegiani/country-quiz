@@ -108,7 +108,7 @@ function ButtonComponent({contadorPuntaje, flagQuestions, setContadorPuntaje, nu
           })}
           <div className='btnNextContainer'>
                 <button className={answerSelected === "" ? "btnNextHide" : "btnNext"} onClick={nextBtnOnClick}>
-                        Next
+                        {language === true ? "Siguiente" : "Next"}
                 </button>
           </div>
         </div>
