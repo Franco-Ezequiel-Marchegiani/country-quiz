@@ -23,7 +23,7 @@ let countriesQuestions = [
       questionText: "Pretoria, a qué país pertenece?",
       questionTextEnglish: "Pretoria is the capital of",
       answerOptiones: [
-        { answerText: "Italia", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Italia", answerTextEnglish: "Italy", isCorrect: false},
         { answerText: "Sudáfrica", answerTextEnglish: "New Zealand", isCorrect: true},
         { answerText: "Surinam", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Sudán", answerTextEnglish: "New Zealand", isCorrect: false},
