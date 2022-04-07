@@ -53,7 +53,7 @@ let countriesQuestions = [
       questionText: "Pekín, a qué país pertenece?",
       questionTextEnglish: "Pekín is the capital of",
       answerOptiones: [
-        { answerText: "Lesoto", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Lesoto", answerTextEnglish: "Lesotho", isCorrect: false},
         { answerText: "Colombia", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "China", answerTextEnglish: "New Zealand", isCorrect: true},
         { answerText: "Luxemburgo", answerTextEnglish: "New Zealand", isCorrect: false},
