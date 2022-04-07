@@ -12,7 +12,8 @@ function Home({language, setLanguage}) {
   let [onHoverBtnHome2, setOnHoverBtnHome2] = useState(false);
   let btnClass1 = !onHoverBtnHome1 ? "btnAnswer" : "btnAnswer hoverSelect";
   let btnClass2 = !onHoverBtnHome2 ? "btnAnswer" : "btnAnswer hoverSelect";
-  let titleSpanish = "Bienvenido! Cual Quiz deseas realizar?"
+  let titleSpanish = "Bienvenido! Cual Quiz deseas realizar?";
+  let titleEnglish = "Welcome! Which game mode do you wanna play?";
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
@@ -20,7 +21,7 @@ function Home({language, setLanguage}) {
             <section className='questionContainer homeContainer'>
                       <BtnChangeLanguage language={language}  setLanguage={setLanguage} />
                       <img className='logoWorld' src={LogoWorld} alt="" />
-                      <h2 className='welcomeTitle'>Bienvenido! Cual Quiz deseas realizar?</h2>
+                      <h2 className='welcomeTitle'>{language === true ? titleSpanish : titleEnglish}</h2>
                       <div>
                           <Link to="/countriesQuiz"><button className={btnClass1} onMouseOver={()=> setOnHoverBtnHome1(true)} onMouseOut={()=> setOnHoverBtnHome1(false)}>Quiz de Capitales</button></Link>
                           <Link to="/flagQuiz"><button className={btnClass2} onMouseOver={()=> setOnHoverBtnHome2(true)} onMouseOut={()=> setOnHoverBtnHome2(false)}>Quiz de Banderas</button></Link>
