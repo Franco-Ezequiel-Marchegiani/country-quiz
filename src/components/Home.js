@@ -18,6 +18,7 @@ function Home({language, setLanguage}) {
 
   let capitalQuizSpanish = "Quiz Capitales";
   let capitalQuizEnglish = "Capital Quiz";
+  let flagQuizSpanish = "Capital Banderas";
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
