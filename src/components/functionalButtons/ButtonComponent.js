@@ -90,10 +90,6 @@ function ButtonComponent({contadorPuntaje, flagQuestions, setContadorPuntaje, nu
           classNameIcon: "classNameIcon4",
         },
       ]
-      /* 
-      flagQuestions[numberQuestion].answerOptiones[singleBtn.btnNumber].answerText
-      flagQuestions[numberQuestion].answerOptiones[singleBtn.btnNumber].answerTextEnglish
-      */
   return (
         <div className='btnContainer'>
           {arrayBtn.map((singleBtn) =>{
