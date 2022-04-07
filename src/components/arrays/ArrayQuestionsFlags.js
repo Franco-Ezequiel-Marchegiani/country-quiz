@@ -1,7 +1,7 @@
 let flagQuestionsEj = [
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "arg",
       answerOptiones: [
         { answerText: "Nueva Zelanda",answerTextEnglish: "New Zealand", isCorrect: false},
@@ -12,7 +12,7 @@ let flagQuestionsEj = [
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "br",
       answerOptiones: [
         { answerText: "Brasil", answerTextEnglish: "Brazil", isCorrect: true},
@@ -23,7 +23,7 @@ let flagQuestionsEj = [
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "lux",
       answerOptiones: [
         { answerText: "Eslovenia", answerTextEnglish: "Slovenia", isCorrect: false},
@@ -34,7 +34,7 @@ let flagQuestionsEj = [
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "prt",
       answerOptiones: [
         { answerText: "Serbia", answerTextEnglish: "Serbia", isCorrect: false},
@@ -45,7 +45,7 @@ let flagQuestionsEj = [
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "usa",
       answerOptiones: [
         { answerText: "Los Estados Unidos de América", answerTextEnglish: "The United States Of America", isCorrect: true},
@@ -56,7 +56,7 @@ let flagQuestionsEj = [
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "nzl",
       answerOptiones: [
         { answerText: "Panama", answerTextEnglish: "Panama", isCorrect: false},
@@ -67,7 +67,7 @@ let flagQuestionsEj = [
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "nor",
       answerOptiones: [
         { answerText: "Noruega", answerTextEnglish: "Norway", isCorrect: true},
@@ -78,7 +78,7 @@ let flagQuestionsEj = [
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "mex",
       answerOptiones: [
         { answerText: "Italia", answerTextEnglish: "Italy", isCorrect: false},
@@ -89,7 +89,7 @@ let flagQuestionsEj = [
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "mhl",
       answerOptiones: [
         { answerText: "Republic Of North Macedonia", answerTextEnglish: "Republic Of North Macedonia", isCorrect: false},
@@ -100,7 +100,7 @@ let flagQuestionsEj = [
     },
     {
       questionText: "A qué país le pertenece esta bandera?",
-      questionTextEnglish: "Which country does this flag belong to",
+      questionTextEnglish: "Which country does this flag belong to?",
       flagCode: "maf",
       answerOptiones: [
         { answerText: "Francia", answerTextEnglish: "France", isCorrect: true},
