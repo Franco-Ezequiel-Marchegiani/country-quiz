@@ -46,7 +46,7 @@ let countriesQuestions = [
         { answerText: "Corea del Norte", answerTextEnglish: "North Korea", isCorrect: true},
         { answerText: "Corea del Sur", answerTextEnglish: "South Korea", isCorrect: false},
         { answerText: "Japón", answerTextEnglish: "Japan", isCorrect: false  },
-        { answerText: "China", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "China", answerTextEnglish: "China", isCorrect: false},
       ]
     },
     {
