@@ -12,8 +12,11 @@ function Home({language, setLanguage}) {
   let [onHoverBtnHome2, setOnHoverBtnHome2] = useState(false);
   let btnClass1 = !onHoverBtnHome1 ? "btnAnswer" : "btnAnswer hoverSelect";
   let btnClass2 = !onHoverBtnHome2 ? "btnAnswer" : "btnAnswer hoverSelect";
+  /* Set the language content */
   let titleSpanish = "Bienvenido! Cual Quiz deseas realizar?";
   let titleEnglish = "Welcome! Which game mode do you wanna play?";
+
+  let capitalQuizSpanish = "Quiz Capitales";
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
