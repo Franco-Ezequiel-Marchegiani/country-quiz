@@ -49,7 +49,7 @@ let countriesQuestions = [
         { answerText: "China", answerTextEnglish: "China", isCorrect: false},
       ]
     },
-    {
+    {/* SEGUIR AÑADIENDO LA RESPUESTA EN INGLÉS DESDE ACÁ, QUEDAN 17 COMMITS POR ESTE LADO */
       questionText: "Pekín, a qué país pertenece?",
       questionTextEnglish: "Pekín is the capital of",
       answerOptiones: [
