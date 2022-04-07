@@ -17,6 +17,7 @@ function Home({language, setLanguage}) {
   let titleEnglish = "Welcome! Which game mode do you wanna play?";
 
   let capitalQuizSpanish = "Quiz Capitales";
+  let capitalQuizEnglish = "Capital Quiz";
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
