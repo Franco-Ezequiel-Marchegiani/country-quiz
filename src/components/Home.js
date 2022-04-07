@@ -30,7 +30,7 @@ function Home({language, setLanguage}) {
                       <h2 className='welcomeTitle'>{language === true ? titleSpanish : titleEnglish}</h2>
                       <div>
                           <Link to="/countriesQuiz"><button className={btnClass1} onMouseOver={()=> setOnHoverBtnHome1(true)} onMouseOut={()=> setOnHoverBtnHome1(false)}>{language === true ? capitalQuizSpanish : capitalQuizEnglish}</button></Link>
-                          <Link to="/flagQuiz"><button className={btnClass2} onMouseOver={()=> setOnHoverBtnHome2(true)} onMouseOut={()=> setOnHoverBtnHome2(false)}>Quiz de Banderas</button></Link>
+                          <Link to="/flagQuiz"><button className={btnClass2} onMouseOver={()=> setOnHoverBtnHome2(true)} onMouseOut={()=> setOnHoverBtnHome2(false)}>{language === true ? flagQuizSpanish : flagQuizEnglish}</button></Link>
                       </div>
 
             </section>
