@@ -10,7 +10,7 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
   let tryAgainSpanish = "Intentar nuevamente";
   let tryAgainEnglish = "Try Again";
   let backHomeSpanish = "Regresar al inicio";
-  let tryAgainEnglish = "Try Again";
+  let backHomeEnglish = "Go back home";
   return (
     <main className='resultContainer'>
         <img className='imageResult' src={LogoEnd} alt="" />
