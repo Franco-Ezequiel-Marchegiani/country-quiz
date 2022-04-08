@@ -24,7 +24,7 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
         <div className='btnTryAgainContainer'>
 
         <button className='btnTryAgain' onClick={restartBtnFunction}>{language === true ? tryAgainSpanish : tryAgainEnglish}</button>
-        <Link to="/" className='btnGoBackHome'> <button className='btnTryAgain' onClick={restartBtnFunction}>Regresar al inicio</button></Link>
+        <Link to="/" className='btnGoBackHome'> <button className='btnTryAgain' onClick={restartBtnFunction}>{language === true ? backHomeSpanish : backHomeEnglish}</button></Link>
         </div>
     </main> 
   );
