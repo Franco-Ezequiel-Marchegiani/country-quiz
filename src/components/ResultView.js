@@ -12,7 +12,7 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
   let backHomeSpanish = "Regresar al inicio";
   let backHomeEnglish = "Go back home";
   let perfectScoreSpanish = "Puntaje perfecto :)";
-
+  let perfectScoreEnglish = "Perfect score :)";
   return (
     <main className='resultContainer'>
         <img className='imageResult' src={LogoEnd} alt="" />
