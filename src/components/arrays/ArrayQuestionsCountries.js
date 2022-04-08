@@ -73,7 +73,7 @@ let countriesQuestions = [
       questionText: "Berna, a qué país pertenece?",
       questionTextEnglish: "Berna is the capital of",
       answerOptiones: [
-        { answerText: "España", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "España", answerTextEnglish: "Spain", isCorrect: false},
         { answerText: "Finlandia", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Suiza", answerTextEnglish: "New Zealand", isCorrect: true},
         { answerText: "Suecia", answerTextEnglish: "New Zealand", isCorrect: false},
