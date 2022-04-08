@@ -1,7 +1,7 @@
 let countriesQuestions = [
     {
       questionText: "¿Buenos Aires, a qué pais pertenece?",
-      questionTextEnglish: "Buenos Aires is the capital of",
+      questionTextEnglish: "Buenos Aires is the capital of...",
       answerOptiones: [
         { answerText: "Sudán",answerTextEnglish: "Sudan", isCorrect: false},
         { answerText: "Italia",answerTextEnglish: "Italy", isCorrect: false},
@@ -11,7 +11,7 @@ let countriesQuestions = [
     },
     {
       questionText: "¿Kabul, a qué país pertenece?",
-      questionTextEnglish: "Kabul is the capital of",
+      questionTextEnglish: "Kabul is the capital of...",
       answerOptiones: [
         { answerText: "Uganda", answerTextEnglish: "Uganda", isCorrect: false},
         { answerText: "Venezuela", answerTextEnglish: "Venezuela", isCorrect: false},
@@ -21,7 +21,7 @@ let countriesQuestions = [
     },
     {
       questionText: "Pretoria, a qué país pertenece?",
-      questionTextEnglish: "Pretoria is the capital of",
+      questionTextEnglish: "Pretoria is the capital of...",
       answerOptiones: [
         { answerText: "Italia", answerTextEnglish: "Italy", isCorrect: false},
         { answerText: "Sudáfrica", answerTextEnglish: "South Africa", isCorrect: true},
@@ -31,7 +31,7 @@ let countriesQuestions = [
     },
     {
       questionText: "Bratislava, a qué país pertenece?",
-      questionTextEnglish: "Bratislava is the capital of",
+      questionTextEnglish: "Bratislava is the capital of...",
       answerOptiones: [
         { answerText: "Estonia", answerTextEnglish: "Estonia", isCorrect: false},
         { answerText: "Ecuador", answerTextEnglish: "Ecuador", isCorrect: false},
@@ -41,7 +41,7 @@ let countriesQuestions = [
     },
     {
       questionText: "Pionyang, a qué país pertenece?",
-      questionTextEnglish: "Pionyang is the capital of",
+      questionTextEnglish: "Pionyang is the capital of...",
       answerOptiones: [
         { answerText: "Corea del Norte", answerTextEnglish: "North Korea", isCorrect: true},
         { answerText: "Corea del Sur", answerTextEnglish: "South Korea", isCorrect: false},
@@ -51,7 +51,7 @@ let countriesQuestions = [
     },
     {
       questionText: "Pekín, a qué país pertenece?",
-      questionTextEnglish: "Pekín is the capital of",
+      questionTextEnglish: "Pekín is the capital of...",
       answerOptiones: [
         { answerText: "Lesoto", answerTextEnglish: "Lesotho", isCorrect: false},
         { answerText: "Colombia", answerTextEnglish: "Colombia", isCorrect: false},
@@ -61,7 +61,7 @@ let countriesQuestions = [
     },
     {
       questionText: "Antananarivo, a qué país pertenece?",
-      questionTextEnglish: "Antananarivo is the capital of",
+      questionTextEnglish: "Antananarivo is the capital of...",
       answerOptiones: [
         { answerText: "Vanuatu", answerTextEnglish: "Vanuatu", isCorrect: false},
         { answerText: "Maldivas", answerTextEnglish: "Maldives", isCorrect: false},
@@ -71,7 +71,7 @@ let countriesQuestions = [
     },
     {
       questionText: "Berna, a qué país pertenece?",
-      questionTextEnglish: "Berna is the capital of",
+      questionTextEnglish: "Berna is the capital of...",
       answerOptiones: [
         { answerText: "España", answerTextEnglish: "Spain", isCorrect: false},
         { answerText: "Finlandia", answerTextEnglish: "Finland", isCorrect: false},
@@ -81,7 +81,7 @@ let countriesQuestions = [
     },
     {
       questionText: "Lima, a qué país pertenece?",
-      questionTextEnglish: "Lima is the capital of",
+      questionTextEnglish: "Lima is the capital of...",
       answerOptiones: [
         { answerText: "Costa Rica", answerTextEnglish: "Costa Rica", isCorrect: false},
         { answerText: "Cuba", answerTextEnglish: "Cuba", isCorrect: false},
@@ -91,7 +91,7 @@ let countriesQuestions = [
     },
     {
       questionText: "Quito, a qué país pertenece?",
-      questionTextEnglish: "Quito is the capital of",
+      questionTextEnglish: "Quito is the capital of...",
       answerOptiones: [
         { answerText: "Ecuador", answerTextEnglish: "Ecuador", isCorrect: true},
         { answerText: "Egipto", answerTextEnglish: "Egypt", isCorrect: false},
