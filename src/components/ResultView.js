@@ -2,7 +2,7 @@ import './Question.css';
 import LogoEnd from '../images/iconWin.svg';
 import { Link } from 'react-router-dom';
 /* Queda pasar todo lo que requiere para su funcionamiento */
-function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje}) {
+function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, language, setLanguage}) {
   let restartBtnFunction = () =>{
     setNumberQuestion(0)
     setContadorPuntaje(0)
