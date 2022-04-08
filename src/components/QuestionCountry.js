@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import './Question.css';
 import countriesQuestions from './arrays/ArrayQuestionsCountries';
 import UseLanguage from '../hooks/UseLanguage';
+import BtnChangeLanguage from './functionalButtons/BtnChangeLanguage';
 function QuestionCountry({language, setLanguage}) {
   
   let [numberQuestion, setNumberQuestion] = useState(0)
