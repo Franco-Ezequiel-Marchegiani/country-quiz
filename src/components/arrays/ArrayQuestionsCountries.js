@@ -94,7 +94,7 @@ let countriesQuestions = [
       questionTextEnglish: "Quito is the capital of",
       answerOptiones: [
         { answerText: "Ecuador", answerTextEnglish: "Ecuador", isCorrect: true},
-        { answerText: "Egipto", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Egipto", answerTextEnglish: "Egypt", isCorrect: false},
         { answerText: "Samoa", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Camboya", answerTextEnglish: "New Zealand", isCorrect: false},
       ]
