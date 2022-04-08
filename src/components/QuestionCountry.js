@@ -37,8 +37,6 @@ function QuestionCountry({language, setLanguage}) {
   let btnClassNumber2Btn4 = answerSelected !== "" ? countriesQuestions[numberQuestion].answerOptiones[3].isCorrect === false ? "btnAnswer wrongAnswer" : countriesQuestions[numberQuestion].answerOptiones[3].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
   let bothClassesBtn4 = btnClassNumber1Btn4 + " " + btnClassNumber2Btn4
 
-  let flagCode = countriesQuestions[numberQuestion].flagCode;
-  let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
 
   let textSpanishTitle = countriesQuestions[numberQuestion].questionText;
   let textEnglishTitle = countriesQuestions[numberQuestion].questionTextEnglish;
@@ -50,7 +48,6 @@ function QuestionCountry({language, setLanguage}) {
             {numberQuestion < 10 ?
                     <main>
                         <img className='logoWorld' src={LogoWorld} alt="" />
-                        <img className='imageFlag' src={urlImage} alt="" />
                         <h2 className='questionText'>{language === true ? textSpanishTitle : textEnglishTitle}</h2>
                         {/* Acá se pasa todo lo necesario para utilizar el componente ButtonComponent */}
                           <ButtonComponent contadorPuntaje={contadorPuntaje} flagQuestions={countriesQuestions} numberQuestion={numberQuestion}setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje} bothClassesBtn1={bothClassesBtn1} bothClassesBtn2={bothClassesBtn2} bothClassesBtn3={bothClassesBtn3} bothClassesBtn4={bothClassesBtn4} answerSelected={answerSelected} setAnswerSelected={setAnswerSelected} wrongAnswerSelected={wrongAnswerSelected} setWrongAnswerSelected={setWrongAnswerSelected} language={language} setLanguage={setLanguage} />
