@@ -7,9 +7,6 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
     setNumberQuestion(0)
     setContadorPuntaje(0)
   }
-
-
-
   let titleSpanish = "Resultado";
   let titleEnglish = "Result";
   let tryAgainSpanish = "Intentar nuevamente";
@@ -18,9 +15,6 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
   let backHomeEnglish = "Go back home";
   let perfectScoreSpanish = "Puntaje perfecto :)";
   let perfectScoreEnglish = "Perfect score :)";
-  /* 
-  <span>{contadorPuntaje}</span>
-   */
   return (
     <main className='resultContainer'>
         <img className='imageResult' src={LogoEnd} alt="" />
