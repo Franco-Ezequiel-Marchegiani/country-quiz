@@ -19,7 +19,7 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
         <div>
             <h1 className='titleResult'>Resultado</h1>
             <p className='textResult'>Respondiste <span>{contadorPuntaje}</span> respuestas correctamente</p>
-            {contadorPuntaje === 10 ? <p className='paragraphPerfectScore'>puntaje perfecto :)</p> : "" }
+            {contadorPuntaje === 10 ? <p className='paragraphPerfectScore'>{language === true ? perfectScoreSpanish : perfectScoreEnglish} </p> : "" }
         </div>
         <div className='btnTryAgainContainer'>
 
