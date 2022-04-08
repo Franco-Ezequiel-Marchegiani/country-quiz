@@ -63,7 +63,7 @@ let countriesQuestions = [
       questionText: "Antananarivo, a qué país pertenece?",
       questionTextEnglish: "Antananarivo is the capital of",
       answerOptiones: [
-        { answerText: "Vanuatu", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Vanuatu", answerTextEnglish: "Vanuatu", isCorrect: false},
         { answerText: "Maldivas", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Malaui", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Madagascar", answerTextEnglish: "New Zealand", isCorrect: true},
