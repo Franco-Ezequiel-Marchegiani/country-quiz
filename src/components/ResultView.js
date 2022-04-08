@@ -19,7 +19,7 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
     <main className='resultContainer'>
         <img className='imageResult' src={LogoEnd} alt="" />
         <div>
-            <h1 className='titleResult'>Resultado</h1>
+            <h1 className='titleResult'>{language === true ? titleSpanish : titleEnglish} </h1>
             {language === true ?
              <p className='textResult'>Respondiste  <span>{contadorPuntaje}</span> respuestas correctamente</p> 
              : 

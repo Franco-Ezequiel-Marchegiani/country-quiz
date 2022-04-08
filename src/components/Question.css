@@ -172,6 +172,11 @@
     text-align: center;
     margin-top: 20px;
 }
+.questionTextCountryContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 @media only screen and (min-width: 600px){
     .questionContainer{
         width: 464px;

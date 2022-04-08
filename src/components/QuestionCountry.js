@@ -43,12 +43,12 @@ function QuestionCountry({language, setLanguage}) {
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
-          <section className='questionContainer'>
+          <section className='questionContainer questionTextCountryContainer'>
             <BtnChangeLanguage language={language} setLanguage={setLanguage} />
             {numberQuestion < 10 ?
-                    <main>
+                    <main className='questionTextCountryContainer'>
                         <img className='logoWorld' src={LogoWorld} alt="" />
-                        <h2 className='questionText'>{language === true ? textSpanishTitle : textEnglishTitle}</h2>
+                        <h2 className='questionText questionTextCountry'>{language === true ? textSpanishTitle : textEnglishTitle}</h2>
                         {/* Acá se pasa todo lo necesario para utilizar el componente ButtonComponent */}
                           <ButtonComponent contadorPuntaje={contadorPuntaje} flagQuestions={countriesQuestions} numberQuestion={numberQuestion}setNumberQuestion={setNumberQuestion} setContadorPuntaje={setContadorPuntaje} bothClassesBtn1={bothClassesBtn1} bothClassesBtn2={bothClassesBtn2} bothClassesBtn3={bothClassesBtn3} bothClassesBtn4={bothClassesBtn4} answerSelected={answerSelected} setAnswerSelected={setAnswerSelected} wrongAnswerSelected={wrongAnswerSelected} setWrongAnswerSelected={setWrongAnswerSelected} language={language} setLanguage={setLanguage} />
                   </main> 
