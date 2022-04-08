@@ -7,18 +7,32 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
     setNumberQuestion(0)
     setContadorPuntaje(0)
   }
+
+
+
+  let titleSpanish = "Resultado";
+  let titleEnglish = "Result";
+  let paragraphSpanish = `Respondiste  ${contadorPuntaje} respuestas correctamente`;
+  let paragraphEnglish = `You answered ${contadorPuntaje} answers correctly`;
   let tryAgainSpanish = "Intentar nuevamente";
   let tryAgainEnglish = "Try Again";
   let backHomeSpanish = "Regresar al inicio";
   let backHomeEnglish = "Go back home";
   let perfectScoreSpanish = "Puntaje perfecto :)";
   let perfectScoreEnglish = "Perfect score :)";
+  /* 
+  <span>{contadorPuntaje}</span>
+   */
   return (
     <main className='resultContainer'>
         <img className='imageResult' src={LogoEnd} alt="" />
         <div>
             <h1 className='titleResult'>Resultado</h1>
-            <p className='textResult'>Respondiste <span>{contadorPuntaje}</span> respuestas correctamente</p>
+            {language === true ?
+             <p className='textResult'>Respondiste  <span>{contadorPuntaje}</span> respuestas correctamente</p> 
+             : 
+             <p className='textResult'>You answered  <span>{contadorPuntaje}</span> answers correctly</p> }
+
             {contadorPuntaje === 10 ? <p className='paragraphPerfectScore'>{language === true ? perfectScoreSpanish : perfectScoreEnglish}</p> : "" }
         </div>
         <div className='btnTryAgainContainer'>
