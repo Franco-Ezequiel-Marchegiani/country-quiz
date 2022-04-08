@@ -12,8 +12,6 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
 
   let titleSpanish = "Resultado";
   let titleEnglish = "Result";
-  let paragraphSpanish = `Respondiste  ${contadorPuntaje} respuestas correctamente`;
-  let paragraphEnglish = `You answered ${contadorPuntaje} answers correctly`;
   let tryAgainSpanish = "Intentar nuevamente";
   let tryAgainEnglish = "Try Again";
   let backHomeSpanish = "Regresar al inicio";
