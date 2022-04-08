@@ -4,6 +4,7 @@ import LogoWorld from '../images/logoWorld.svg';
 import countriesQuestions from './arrays/ArrayQuestionsCountries';
 import UseLanguage from '../hooks/UseLanguage';
 import BtnChangeLanguage from './functionalButtons/BtnChangeLanguage';
+import ResultView from './ResultView';
 function QuestionCountry({language, setLanguage}) {
   
   let [numberQuestion, setNumberQuestion] = useState(0)
