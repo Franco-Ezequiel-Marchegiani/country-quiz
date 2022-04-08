@@ -84,7 +84,7 @@ let countriesQuestions = [
       questionTextEnglish: "Lima is the capital of",
       answerOptiones: [
         { answerText: "Costa Rica", answerTextEnglish: "Costa Rica", isCorrect: false},
-        { answerText: "Cuba", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Cuba", answerTextEnglish: "Cuba", isCorrect: false},
         { answerText: "Portugal", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Perú", answerTextEnglish: "New Zealand", isCorrect: true},
       ]
