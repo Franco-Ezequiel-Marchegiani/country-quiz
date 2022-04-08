@@ -64,7 +64,7 @@ let countriesQuestions = [
       questionTextEnglish: "Antananarivo is the capital of",
       answerOptiones: [
         { answerText: "Vanuatu", answerTextEnglish: "Vanuatu", isCorrect: false},
-        { answerText: "Maldivas", answerTextEnglish: "New Zealand", isCorrect: false},
+        { answerText: "Maldivas", answerTextEnglish: "Maldives", isCorrect: false},
         { answerText: "Malaui", answerTextEnglish: "New Zealand", isCorrect: false},
         { answerText: "Madagascar", answerTextEnglish: "New Zealand", isCorrect: true},
       ]
