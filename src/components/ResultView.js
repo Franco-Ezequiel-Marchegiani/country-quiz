@@ -8,6 +8,7 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
     setContadorPuntaje(0)
   }
   let tryAgainSpanish = "Intentar nuevamente";
+  let tryAgainEnglish = "Try Again";
   return (
     <main className='resultContainer'>
         <img className='imageResult' src={LogoEnd} alt="" />
