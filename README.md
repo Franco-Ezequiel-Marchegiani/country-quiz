@@ -39,7 +39,7 @@
 
 - What was your experience? My Experience doing this challenge, it was so comfortable, I learned a little more about the skills than I used to know, and i really had a good time making this web site :)
 
-- What have you learned/improved?
+- What have you learned/improved? I keep learning much more about react, API calling, good practices and the states of react and how pass it through the childs and fathers components. Also I learnd how set up the page into a hosting using Firebase to hold it in a server
 
 - Your wisdom? :)
 
