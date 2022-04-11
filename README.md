@@ -37,7 +37,7 @@
 
 - Where can I see your demo? You can see the demo clicking this <a href="https://devchallenges.io/challenges/Bu3G2irnaXmfwQ8sZkw8">link </a>
 
-- What was your experience?
+- What was your experience? My Experience doing this challenge, it was so comfortable, I learned a little more about the skills than I used to know, and i really had a good time making this web site :)
 
 - What have you learned/improved?
 
