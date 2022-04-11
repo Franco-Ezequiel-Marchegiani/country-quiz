@@ -35,8 +35,6 @@
 ![screenshot](./src/images/home.png)
 ![screenshot](./src/images/question.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
 - Where can I see your demo? You can see the demo clicking this <a href="https://devchallenges.io/challenges/Bu3G2irnaXmfwQ8sZkw8">link </a>
 
 - What was your experience?
