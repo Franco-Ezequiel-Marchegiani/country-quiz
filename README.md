@@ -28,8 +28,6 @@
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
-<!-- OVERVIEW -->
-
 ## Overview
 
 ![screenshot](./src/images/home.png)
