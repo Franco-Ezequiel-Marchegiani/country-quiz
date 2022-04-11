@@ -1,5 +1,3 @@
-<!-- Please update value in the {}  -->
-
 <h1 align="center">Quiz App Game</h1>
 
 <div align="center">
