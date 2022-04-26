@@ -35,5 +35,4 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
     </main> 
   );
 }
-
 export default ResultView;
