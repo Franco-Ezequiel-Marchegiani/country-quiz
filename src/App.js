@@ -4,7 +4,6 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import QuestionFlag from './components/QuestionFlag';
 import Home from './components/Home';
 import QuestionCountry from './components/QuestionCountry';
-import LanguageContext from './context/LanguageContext';
 function App() {
   let[ language, setLanguage] = useState(true)
     console.log(language);
