@@ -10,5 +10,4 @@ function BtnChangeLanguage({language, setLanguage}) {
         </button>
   );
 }
-
 export default BtnChangeLanguage;
