@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 function ButtonComponent({contadorPuntaje, flagQuestions, setContadorPuntaje, numberQuestion, setNumberQuestion,  bothClassesBtn1, bothClassesBtn2, bothClassesBtn3, bothClassesBtn4,answerSelected, setAnswerSelected, wrongAnswerSelected, setWrongAnswerSelected, language, setLanguage}) {
     /* Estas funciones se aplican al clickear cada botón & ejecutan la suma del puntaje & que se muestren las respuestas luego de haber clickeado */
-    console.log(language);
     let [onHoverBtn1, setOnHoverBtn1] = useState(false);
     let [onHoverBtn2, setOnHoverBtn2] = useState(false);
     let [onHoverBtn3, setOnHoverBtn3] = useState(false);
