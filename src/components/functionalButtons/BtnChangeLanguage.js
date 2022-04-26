@@ -1,5 +1,4 @@
 import '../Question.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Spanish from '../../images/spanishFlag.png';
 import English from '../../images/englishFlag.png';
 /* Queda pasar todo lo que requiere para su funcionamiento */
