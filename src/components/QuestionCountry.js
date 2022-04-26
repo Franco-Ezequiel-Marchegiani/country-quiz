@@ -7,7 +7,6 @@ import BtnChangeLanguage from './functionalButtons/BtnChangeLanguage';
 import ButtonComponent from './functionalButtons/ButtonComponent';
 import ResultView from './ResultView';
 function QuestionCountry({language, setLanguage}) {
-  
   let [numberQuestion, setNumberQuestion] = useState(0)
   let [answerSelected, setAnswerSelected] = useState("");
   let [onHoverBtn1, setOnHoverBtn1] = useState(false);
@@ -16,7 +15,6 @@ function QuestionCountry({language, setLanguage}) {
   let [onHoverBtn4, setOnHoverBtn4] = useState(false);
   let [contadorPuntaje, setContadorPuntaje] = useState(0);
   let [wrongAnswerSelected, setWrongAnswerSelected ] = useState(false);
-
   /* Las variables son para ahorrar código en el return para añadir y quitar las clases para los estilos de hover */
   let btnClassNumber1Btn1 = !onHoverBtn1 ? "btnAnswer" : "btnAnswer hoverSelect"
   let btnClassNumber2Btn1 = answerSelected !== "" ? countriesQuestions[numberQuestion].answerOptiones[0].isCorrect === false ? "btnAnswer wrongAnswer" : countriesQuestions[numberQuestion].answerOptiones[0].isCorrect === true ? "btnAnswer correctAnswer" : "" : "btnAnswer"
@@ -59,9 +57,7 @@ function QuestionCountry({language, setLanguage}) {
       <footer>
         <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
       </footer>
-
     </main>
   );
 }
-  
-  export default QuestionCountry;
+export default QuestionCountry;
