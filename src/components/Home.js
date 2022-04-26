@@ -13,7 +13,6 @@ function Home({language, setLanguage}) {
   /* Set the language content */
   let titleSpanish = "Bienvenido! Cual Quiz deseas realizar?";
   let titleEnglish = "Welcome! Which game mode do you wanna play?";
-
   let capitalQuizSpanish = "Quiz Capitales";
   let capitalQuizEnglish = "Capital Quiz";
   let flagQuizSpanish = "Capital Banderas";
@@ -21,7 +20,6 @@ function Home({language, setLanguage}) {
   return (
     <main className='containerAll'>
       <h1 className='titleApp'>Country Quiz</h1>
-      
             <section className='questionContainer homeContainer'>
                       <BtnChangeLanguage language={language}  setLanguage={setLanguage} />
                       <img className='logoWorld' src={LogoWorld} alt="" />
@@ -30,14 +28,11 @@ function Home({language, setLanguage}) {
                           <Link to="/countriesQuiz"><button className={btnClass1} onMouseOver={()=> setOnHoverBtnHome1(true)} onMouseOut={()=> setOnHoverBtnHome1(false)}>{language === true ? capitalQuizSpanish : capitalQuizEnglish}</button></Link>
                           <Link to="/flagQuiz"><button className={btnClass2} onMouseOver={()=> setOnHoverBtnHome2(true)} onMouseOut={()=> setOnHoverBtnHome2(false)}>{language === true ? flagQuizSpanish : flagQuizEnglish}</button></Link>
                       </div>
-
             </section>
       <footer>
         <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
       </footer>
-
     </main>
   );
 }
-
 export default Home;
