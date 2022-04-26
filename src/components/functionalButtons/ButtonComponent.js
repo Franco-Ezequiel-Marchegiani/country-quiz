@@ -114,5 +114,4 @@ function ButtonComponent({contadorPuntaje, flagQuestions, setContadorPuntaje, nu
         </div>
   );
 }
-
 export default ButtonComponent;
