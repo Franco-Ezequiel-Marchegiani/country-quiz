@@ -6,8 +6,6 @@ import { useState } from 'react';
 import BtnChangeLanguage from './functionalButtons/BtnChangeLanguage';
 import useLanguage from '../hooks/UseLanguage'
 function Home({language, setLanguage}) {
-    /* const language = useLanguage();
-    console.log(language); */
   let [onHoverBtnHome1, setOnHoverBtnHome1] = useState(false);
   let [onHoverBtnHome2, setOnHoverBtnHome2] = useState(false);
   let btnClass1 = !onHoverBtnHome1 ? "btnAnswer" : "btnAnswer hoverSelect";
