@@ -6,7 +6,6 @@ import Home from './components/Home';
 import QuestionCountry from './components/QuestionCountry';
 function App() {
   let[ language, setLanguage] = useState(true)
-    console.log(language);
   return (
     <>
     <BrowserRouter>
