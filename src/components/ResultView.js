@@ -18,19 +18,19 @@ function ResultView({contadorPuntaje, setNumberQuestion, setContadorPuntaje, lan
   return (
     <main className='resultContainer'>
         <img className='imageResult' src={LogoEnd} alt="" />
-        <div>
-            <h1 className='titleResult'>{language === true ? titleSpanish : titleEnglish} </h1>
-            {language === true ?
-             <p className='textResult'>Respondiste  <span>{contadorPuntaje}</span> respuestas correctamente</p> 
-             : 
-             <p className='textResult'>You answered  <span>{contadorPuntaje}</span> answers correctly</p> }
+          <div>
+              <h1 className='titleResult'>{language === true ? titleSpanish : titleEnglish} </h1>
+              {language === true ?
+              <p className='textResult'>Respondiste  <span>{contadorPuntaje}</span> respuestas correctamente</p> 
+              : 
+              <p className='textResult'>You answered  <span>{contadorPuntaje}</span> answers correctly</p> }
 
-            {contadorPuntaje === 10 ? <p className='paragraphPerfectScore'>{language === true ? perfectScoreSpanish : perfectScoreEnglish}</p> : "" }
-        </div>
-        <div className='btnTryAgainContainer'>
-            <button className='btnTryAgain' onClick={restartBtnFunction}>{language === true ? tryAgainSpanish : tryAgainEnglish}</button>
-            <Link to="/" className='btnGoBackHome'> <button className='btnTryAgain' onClick={restartBtnFunction}>{language === true ? backHomeSpanish : backHomeEnglish}</button></Link>
-        </div>
+              {contadorPuntaje === 10 ? <p className='paragraphPerfectScore'>{language === true ? perfectScoreSpanish : perfectScoreEnglish}</p> : "" }
+          </div>
+          <div className='btnTryAgainContainer'>
+              <button className='btnTryAgain' onClick={restartBtnFunction}>{language === true ? tryAgainSpanish : tryAgainEnglish}</button>
+              <Link to="/" className='btnGoBackHome'> <button className='btnTryAgain' onClick={restartBtnFunction}>{language === true ? backHomeSpanish : backHomeEnglish}</button></Link>
+          </div>
     </main> 
   );
 }
