@@ -7,7 +7,6 @@ import flagQuestions from './arrays/ArrayQuestionsFlags'
 import { Link } from 'react-router-dom';
 import BtnChangeLanguage from './functionalButtons/BtnChangeLanguage';
 function QuestionFlag({language, setLanguage}) {
-  
   let [numberQuestion, setNumberQuestion] = useState(0)
   let [answerSelected, setAnswerSelected] = useState("");
   let [onHoverBtn1, setOnHoverBtn1] = useState(false);
@@ -62,9 +61,7 @@ function QuestionFlag({language, setLanguage}) {
       <footer>
         <p>Created by <Link className='footerLink' to="//github.com/Franco-Ezequiel-Marchegiani" target="_blank">Franco Ezequiel Marchegiani</Link> - devChallenges.io</p>
       </footer>
-
     </main>
   );
 }
-
 export default QuestionFlag;
