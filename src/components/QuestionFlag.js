@@ -39,6 +39,8 @@ function QuestionFlag({language, setLanguage}) {
 
   let flagCode = flagQuestions[numberQuestion].flagCode;
   let urlImage = `https://countryflagsapi.com/png/${flagCode}`;
+  /* ../images/banderas/${flagCode}.png */
+  let urlImage1 = `../images/background.png`;
 
   let textSpanishTitle = flagQuestions[numberQuestion].questionText;
   let textEnglishTitle = flagQuestions[numberQuestion].questionTextEnglish;
