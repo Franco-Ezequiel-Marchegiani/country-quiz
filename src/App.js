@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import QuestionFlag from './components/QuestionFlag';
 import Home from './components/Home';
 import QuestionCountry from './components/QuestionCountry';
@@ -19,5 +19,4 @@ function App() {
     </>
   );
 }
-
 export default App;
